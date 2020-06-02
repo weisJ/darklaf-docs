@@ -26,6 +26,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #6494ED" width="150" height="25">
     </tr>
     <tr>
+        <td>%controlFadeStartSecondary</td>
+        <td>#676A71 [103,106,113]</td>
+        <td></td>
+        <td style="background-color: #676A71" width="150" height="25">
+    </tr>
+    <tr>
         <td>%glowFocusErrorLine</td>
         <td>#692746 [105,039,070]</td>
         <td></td>
@@ -60,6 +66,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td>#828D96 [130,141,150]</td>
         <td></td>
         <td style="background-color: #828D96" width="150" height="25">
+    </tr>
+    <tr>
+        <td>%controlFadeEndSecondary</td>
+        <td>#868A91 [134,138,145]</td>
+        <td></td>
+        <td style="background-color: #868A91" width="150" height="25">
     </tr>
     <tr>
         <td>%warningIconColor</td>
@@ -6794,18 +6806,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>ScrollBar.fadeStartColor</td>
-        <td>#676A71 [103,106,113]</td>
-        <td></td>
-        <td style="background-color: #676A71" width="150" height="25">
-    </tr>
-    <tr>
-        <td>ScrollBar.fadeEndColor</td>
-        <td>#797E85 [121,126,133]</td>
-        <td></td>
-        <td style="background-color: #797E85" width="150" height="25">
-    </tr>
-    <tr>
         <td>ScrollBar.maximumThumbSize</td>
         <td>Dimension [4096,4096]</td>
         <td></td>
@@ -6819,13 +6819,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </tr>
     <tr>
         <td>ScrollBar.smallWidth</td>
-        <td>10</td>
+        <td>8</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
         <td>ScrollBar.width</td>
-        <td>12</td>
+        <td>10</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ScrollBar.thumbAlpha</td>
+        <td>60</td>
         <td></td>
         <td></td>
     </tr>
@@ -6852,6 +6858,18 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td>#282B2F [040,043,047]</td>
         <td>%controlBorderSecondary</td>
         <td style="background-color: #282B2F" width="150" height="25">
+    </tr>
+    <tr>
+        <td>ScrollBar.fadeEndColor</td>
+        <td>#868A91 [134,138,145]</td>
+        <td>%controlFadeEndSecondary</td>
+        <td style="background-color: #868A91" width="150" height="25">
+    </tr>
+    <tr>
+        <td>ScrollBar.fadeStartColor</td>
+        <td>#676A71 [103,106,113]</td>
+        <td>%controlFadeStartSecondary</td>
+        <td style="background-color: #676A71" width="150" height="25">
     </tr>
     <tr>
         <td>ScrollBar.thumb</td>
@@ -6900,13 +6918,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>ScrollPane.ancestorInputMap.RightToLeft</td>
+        <td>ScrollPane.ancestorInputMap</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>ScrollPane.ancestorInputMap</td>
+        <td>ScrollPane.ancestorInputMap.RightToLeft</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
@@ -7088,13 +7106,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>Slider.focusInputMap</td>
+        <td>Slider.focusInputMap.RightToLeft</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>Slider.focusInputMap.RightToLeft</td>
+        <td>Slider.focusInputMap</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
@@ -7130,6 +7148,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #568AF2" width="150" height="25">
     </tr>
     <tr>
+        <td>Slider.inactiveThumbFill</td>
+        <td>#5C6370 [092,099,112]</td>
+        <td>%controlFillDisabled</td>
+        <td style="background-color: #5C6370" width="150" height="25">
+    </tr>
+    <tr>
         <td>Slider.volume.inactiveThumbFill</td>
         <td>#5C6370 [092,099,112]</td>
         <td>%controlFillDisabled</td>
@@ -7137,12 +7161,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </tr>
     <tr>
         <td>Slider.disabledTrackColor</td>
-        <td>#5C6370 [092,099,112]</td>
-        <td>%controlFillDisabled</td>
-        <td style="background-color: #5C6370" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Slider.inactiveThumbFill</td>
         <td>#5C6370 [092,099,112]</td>
         <td>%controlFillDisabled</td>
         <td style="background-color: #5C6370" width="150" height="25">
@@ -7160,13 +7178,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #313469" width="150" height="25">
     </tr>
     <tr>
-        <td>Slider.volume.activeThumbFill</td>
+        <td>Slider.selectedTrackColor</td>
         <td>#568AF2 [086,138,242]</td>
         <td>%controlFillSecondary</td>
         <td style="background-color: #568AF2" width="150" height="25">
     </tr>
     <tr>
-        <td>Slider.selectedTrackColor</td>
+        <td>Slider.volume.activeThumbFill</td>
         <td>#568AF2 [086,138,242]</td>
         <td>%controlFillSecondary</td>
         <td style="background-color: #568AF2" width="150" height="25">
@@ -8476,28 +8494,16 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #414855" width="150" height="25">
     </tr>
     <tr>
-        <td>TabFramePopup.headerBackground</td>
-        <td>#323844 [050,056,068]</td>
-        <td>%backgroundColorfulInactive</td>
-        <td style="background-color: #323844" width="150" height="25">
-    </tr>
-    <tr>
         <td>TabFramePopup.headerSelectedBackground</td>
         <td>#323844 [050,056,068]</td>
         <td>%backgroundColorfulInactive</td>
         <td style="background-color: #323844" width="150" height="25">
     </tr>
     <tr>
-        <td>TabFramePopup.headerSelectedHoverBackground</td>
-        <td>#3D424B [061,066,075]</td>
-        <td>%backgroundHoverColorful</td>
-        <td style="background-color: #3D424B" width="150" height="25">
-    </tr>
-    <tr>
-        <td>TabFramePopup.headerFocusHoverBackground</td>
-        <td>#3D424B [061,066,075]</td>
-        <td>%backgroundHoverColorful</td>
-        <td style="background-color: #3D424B" width="150" height="25">
+        <td>TabFramePopup.headerBackground</td>
+        <td>#323844 [050,056,068]</td>
+        <td>%backgroundColorfulInactive</td>
+        <td style="background-color: #323844" width="150" height="25">
     </tr>
     <tr>
         <td>TabFramePopup.headerHoverBackground</td>
@@ -8506,7 +8512,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #3D424B" width="150" height="25">
     </tr>
     <tr>
+        <td>TabFramePopup.headerSelectedHoverBackground</td>
+        <td>#3D424B [061,066,075]</td>
+        <td>%backgroundHoverColorful</td>
+        <td style="background-color: #3D424B" width="150" height="25">
+    </tr>
+    <tr>
         <td>TabFramePopup.headerFocusSelectedHoverBackground</td>
+        <td>#3D424B [061,066,075]</td>
+        <td>%backgroundHoverColorful</td>
+        <td style="background-color: #3D424B" width="150" height="25">
+    </tr>
+    <tr>
+        <td>TabFramePopup.headerFocusHoverBackground</td>
         <td>#3D424B [061,066,075]</td>
         <td>%backgroundHoverColorful</td>
         <td style="background-color: #3D424B" width="150" height="25">
@@ -8604,13 +8622,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #3D424B" width="150" height="25">
     </tr>
     <tr>
-        <td>TabFrameTab.foreground</td>
+        <td>TabFrameTab.hoverForeground</td>
         <td>#ABB2BF [171,178,191]</td>
         <td>%textForeground</td>
         <td style="background-color: #ABB2BF" width="150" height="25">
     </tr>
     <tr>
-        <td>TabFrameTab.hoverForeground</td>
+        <td>TabFrameTab.foreground</td>
         <td>#ABB2BF [171,178,191]</td>
         <td>%textForeground</td>
         <td style="background-color: #ABB2BF" width="150" height="25">
@@ -8788,13 +8806,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>TabbedPane.focusInputMap</td>
+        <td>TabbedPane.ancestorInputMap</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>TabbedPane.ancestorInputMap</td>
+        <td>TabbedPane.focusInputMap</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
@@ -8824,13 +8842,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #323844" width="150" height="25">
     </tr>
     <tr>
-        <td>TabbedPane.focus</td>
+        <td>TabbedPane.selectedBackground</td>
         <td>#3D424B [061,066,075]</td>
         <td>%backgroundSelected</td>
         <td style="background-color: #3D424B" width="150" height="25">
     </tr>
     <tr>
-        <td>TabbedPane.selectedBackground</td>
+        <td>TabbedPane.focus</td>
         <td>#3D424B [061,066,075]</td>
         <td>%backgroundSelected</td>
         <td style="background-color: #3D424B" width="150" height="25">
@@ -9032,20 +9050,14 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>Table.border</td>
-        <td>null</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Table.focusCellHighlightBorder</td>
-        <td>DarkTableCellFocusBorder</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
         <td>Table.focusSelectedCellHighlightBorder</td>
         <td>DarkTableCellFocusBorder</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Table.cellEditorBorder</td>
+        <td>DarkTableCellBorder</td>
         <td></td>
         <td></td>
     </tr>
@@ -9056,14 +9068,20 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="padding:0px" align="center"><img src="img/DarkTableScrollPaneBorder.png" alt="Table.scrollPaneBorder"></td>
     </tr>
     <tr>
-        <td>Table.cellEditorBorder</td>
-        <td>DarkTableCellBorder</td>
+        <td>Table.focusCellHighlightBorder</td>
+        <td>DarkTableCellFocusBorder</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
         <td>Table.cellNoFocusBorder</td>
         <td>DarkTableCellBorder</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Table.border</td>
+        <td>null</td>
         <td></td>
         <td></td>
     </tr>
@@ -9389,19 +9407,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #46494F" width="150" height="25">
     </tr>
     <tr>
-        <td>TaskPane.titleOver</td>
-        <td>#ABB2BF [171,178,191]</td>
-        <td>%textForeground</td>
-        <td style="background-color: #ABB2BF" width="150" height="25">
-    </tr>
-    <tr>
-        <td>TaskPane.specialTitleOver</td>
-        <td>#ABB2BF [171,178,191]</td>
-        <td>%textForeground</td>
-        <td style="background-color: #ABB2BF" width="150" height="25">
-    </tr>
-    <tr>
         <td>TaskPane.titleForeground</td>
+        <td>#ABB2BF [171,178,191]</td>
+        <td>%textForeground</td>
+        <td style="background-color: #ABB2BF" width="150" height="25">
+    </tr>
+    <tr>
+        <td>TaskPane.titleOver</td>
         <td>#ABB2BF [171,178,191]</td>
         <td>%textForeground</td>
         <td style="background-color: #ABB2BF" width="150" height="25">
@@ -9413,13 +9425,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #ABB2BF" width="150" height="25">
     </tr>
     <tr>
-        <td>TaskPane.specialTitleForeground</td>
+        <td>TaskPane.specialTitleBackground</td>
         <td>#ABB2BF [171,178,191]</td>
         <td>%textForeground</td>
         <td style="background-color: #ABB2BF" width="150" height="25">
     </tr>
     <tr>
-        <td>TaskPane.specialTitleBackground</td>
+        <td>TaskPane.specialTitleOver</td>
+        <td>#ABB2BF [171,178,191]</td>
+        <td>%textForeground</td>
+        <td style="background-color: #ABB2BF" width="150" height="25">
+    </tr>
+    <tr>
+        <td>TaskPane.specialTitleForeground</td>
         <td>#ABB2BF [171,178,191]</td>
         <td>%textForeground</td>
         <td style="background-color: #ABB2BF" width="150" height="25">
@@ -9872,13 +9890,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #282C34" width="150" height="25">
     </tr>
     <tr>
-        <td>TextField.inactiveBackground</td>
+        <td>TextField.disabledBackground</td>
         <td>#21252B [033,037,043]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #21252B" width="150" height="25">
     </tr>
     <tr>
-        <td>TextField.disabledBackground</td>
+        <td>TextField.inactiveBackground</td>
         <td>#21252B [033,037,043]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #21252B" width="150" height="25">
@@ -10101,13 +10119,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #282C34" width="150" height="25">
     </tr>
     <tr>
-        <td>TextPane.inactiveBackground</td>
+        <td>TextPane.disabledBackground</td>
         <td>#21252B [033,037,043]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #21252B" width="150" height="25">
     </tr>
     <tr>
-        <td>TextPane.disabledBackground</td>
+        <td>TextPane.inactiveBackground</td>
         <td>#21252B [033,037,043]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #21252B" width="150" height="25">
@@ -10297,13 +10315,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #ABB2BF" width="150" height="25">
     </tr>
     <tr>
-        <td>ToggleButton.disabledSliderKnobBorderColor</td>
+        <td>ToggleButton.disabledSliderKnobFillColor</td>
         <td>#5C6370 [092,099,112]</td>
         <td>%controlFillDisabled</td>
         <td style="background-color: #5C6370" width="150" height="25">
     </tr>
     <tr>
-        <td>ToggleButton.disabledSliderKnobFillColor</td>
+        <td>ToggleButton.disabledSliderKnobBorderColor</td>
         <td>#5C6370 [092,099,112]</td>
         <td>%controlFillDisabled</td>
         <td style="background-color: #5C6370" width="150" height="25">
@@ -10403,12 +10421,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>ToolBar.border</td>
-        <td>DarkToolBarBorder</td>
-        <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkToolBarBorder.png" alt="ToolBar.border"></td>
-    </tr>
-    <tr>
         <td>ToolBar.nonrolloverBorder</td>
         <td>DarkToolBarBorder</td>
         <td></td>
@@ -10419,6 +10431,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td>DarkToolBarBorder</td>
         <td></td>
         <td style="padding:0px" align="center"><img src="img/DarkToolBarBorder.png" alt="ToolBar.rolloverBorder"></td>
+    </tr>
+    <tr>
+        <td>ToolBar.border</td>
+        <td>DarkToolBarBorder</td>
+        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkToolBarBorder.png" alt="ToolBar.border"></td>
     </tr>
     <tr>
         <td>ToolBar.floatingBackground</td>
@@ -10445,6 +10463,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #323844" width="150" height="25">
     </tr>
     <tr>
+        <td>ToolBar.dockingForeground</td>
+        <td>#ABB2BF [171,178,191]</td>
+        <td>%textForeground</td>
+        <td style="background-color: #ABB2BF" width="150" height="25">
+    </tr>
+    <tr>
         <td>ToolBar.floatingForeground</td>
         <td>#ABB2BF [171,178,191]</td>
         <td>%textForeground</td>
@@ -10452,12 +10476,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </tr>
     <tr>
         <td>ToolBar.foreground</td>
-        <td>#ABB2BF [171,178,191]</td>
-        <td>%textForeground</td>
-        <td style="background-color: #ABB2BF" width="150" height="25">
-    </tr>
-    <tr>
-        <td>ToolBar.dockingForeground</td>
         <td>#ABB2BF [171,178,191]</td>
         <td>%textForeground</td>
         <td style="background-color: #ABB2BF" width="150" height="25">
@@ -11340,13 +11358,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #2C313A" width="150" height="25">
     </tr>
     <tr>
-        <td>global.foreground</td>
+        <td>global.textForeground</td>
         <td>#ABB2BF [171,178,191]</td>
         <td>%textForeground</td>
         <td style="background-color: #ABB2BF" width="150" height="25">
     </tr>
     <tr>
-        <td>global.textForeground</td>
+        <td>global.foreground</td>
         <td>#ABB2BF [171,178,191]</td>
         <td>%textForeground</td>
         <td style="background-color: #ABB2BF" width="150" height="25">

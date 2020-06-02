@@ -284,6 +284,18 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #666666" width="150" height="25">
     </tr>
     <tr>
+        <td>%controlFadeStartSecondary</td>
+        <td>#6B6B6B [107,107,107]</td>
+        <td></td>
+        <td style="background-color: #6B6B6B" width="150" height="25">
+    </tr>
+    <tr>
+        <td>%controlFadeEndSecondary</td>
+        <td>#0B0B0B [011,011,011]</td>
+        <td></td>
+        <td style="background-color: #0B0B0B" width="150" height="25">
+    </tr>
+    <tr>
         <td>%backgroundHeader</td>
         <td>#7F7FFF [127,127,255]</td>
         <td></td>
@@ -895,7 +907,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <th>Preview</th>
     </tr>
     <tr>
-        <td>AuditoryCues.cueList</td>
+        <td>AuditoryCues.noAuditoryCues</td>
         <td>Object[]</td>
         <td></td>
         <td></td>
@@ -907,7 +919,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>AuditoryCues.noAuditoryCues</td>
+        <td>AuditoryCues.cueList</td>
         <td>Object[]</td>
         <td></td>
         <td></td>
@@ -1103,13 +1115,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #00D1E5" width="150" height="25">
     </tr>
     <tr>
-        <td>Button.activeFillColorRollOver</td>
+        <td>Button.borderless.hover</td>
         <td>#E6E6E6 [230,230,230]</td>
         <td>%hoverHighlight</td>
         <td style="background-color: #E6E6E6" width="150" height="25">
     </tr>
     <tr>
-        <td>Button.borderless.hover</td>
+        <td>Button.activeFillColorRollOver</td>
         <td>#E6E6E6 [230,230,230]</td>
         <td>%hoverHighlight</td>
         <td style="background-color: #E6E6E6" width="150" height="25">
@@ -1221,7 +1233,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #CCCCFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Cell.backgroundAlternative</td>
+        <td>Cell.inactiveBackgroundNoFocusAlternative</td>
         <td>#CCCCFF [204,204,255]</td>
         <td>%backgroundAlternative</td>
         <td style="background-color: #CCCCFF" width="150" height="25">
@@ -1233,13 +1245,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #CCCCFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Cell.inactiveBackgroundNoFocusAlternative</td>
+        <td>Cell.backgroundAlternative</td>
         <td>#CCCCFF [204,204,255]</td>
         <td>%backgroundAlternative</td>
         <td style="background-color: #CCCCFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Cell.background</td>
+        <td>Cell.inactiveBackground</td>
+        <td>#FFFFFF [255,255,255]</td>
+        <td>%backgroundContainer</td>
+        <td style="background-color: #FFFFFF" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Cell.backgroundNoFocus</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%backgroundContainer</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -1251,13 +1269,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Cell.inactiveBackground</td>
-        <td>#FFFFFF [255,255,255]</td>
-        <td>%backgroundContainer</td>
-        <td style="background-color: #FFFFFF" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Cell.backgroundNoFocus</td>
+        <td>Cell.background</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%backgroundContainer</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -1299,13 +1311,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #E0861F" width="150" height="25">
     </tr>
     <tr>
-        <td>Cell.inactiveSelectedNoFocus</td>
+        <td>Cell.inactiveForegroundNoFocus</td>
         <td>#E0861F [224,134,031]</td>
         <td>%textForegroundInactive</td>
         <td style="background-color: #E0861F" width="150" height="25">
     </tr>
     <tr>
-        <td>Cell.inactiveForegroundNoFocus</td>
+        <td>Cell.inactiveSelectedNoFocus</td>
         <td>#E0861F [224,134,031]</td>
         <td>%textForegroundInactive</td>
         <td style="background-color: #E0861F" width="150" height="25">
@@ -1900,13 +1912,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>CheckBoxMenuItem.acceleratorSelectionForeground</td>
+        <td>CheckBoxMenuItem.acceleratorForeground</td>
         <td>#191919 [025,025,025]</td>
         <td>%acceleratorForeground</td>
         <td style="background-color: #191919" width="150" height="25">
     </tr>
     <tr>
-        <td>CheckBoxMenuItem.acceleratorForeground</td>
+        <td>CheckBoxMenuItem.acceleratorSelectionForeground</td>
         <td>#191919 [025,025,025]</td>
         <td>%acceleratorForeground</td>
         <td style="background-color: #191919" width="150" height="25">
@@ -2078,13 +2090,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>ColorChooser.sliderBorderColor</td>
+        <td>ColorChooser.pipetteBorderColor</td>
         <td>#000000 [000,000,000]</td>
         <td>%widgetBorder</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>ColorChooser.pipetteBorderColor</td>
+        <td>ColorChooser.sliderBorderColor</td>
         <td>#000000 [000,000,000]</td>
         <td>%widgetBorder</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -2320,13 +2332,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>ComboBox.background</td>
+        <td>ComboBox.arrowBackground</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%backgroundContainer</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>ComboBox.arrowBackground</td>
+        <td>ComboBox.background</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%backgroundContainer</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -2380,13 +2392,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>ComboBox.inactiveBackground</td>
+        <td>ComboBox.disabledBackground</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%widgetFillInactive</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>ComboBox.disabledBackground</td>
+        <td>ComboBox.inactiveBackground</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%widgetFillInactive</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -3593,13 +3605,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.CheckBoxFocused.activeFillColor</td>
+        <td>Icons.CheckBox.activeFillColor</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%CheckBox.activeFillColor</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.CheckBox.activeFillColor</td>
+        <td>Icons.CheckBoxFocused.activeFillColor</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%CheckBox.activeFillColor</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -3641,13 +3653,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.CheckBoxIndeterminateSelectedDisabled.inactiveFillColor</td>
+        <td>Icons.CheckBoxDisabled.inactiveFillColor</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%CheckBox.inactiveFillColor</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.CheckBoxDisabled.inactiveFillColor</td>
+        <td>Icons.CheckBoxIndeterminateSelectedDisabled.inactiveFillColor</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%CheckBox.inactiveFillColor</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -3677,13 +3689,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.CheckBoxIndeterminateSelectedFocused.selectedFillColor</td>
+        <td>Icons.CheckBoxSelected.selectedFillColor</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%CheckBox.selectedFillColor</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.CheckBoxSelected.selectedFillColor</td>
+        <td>Icons.CheckBoxIndeterminateSelectedFocused.selectedFillColor</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%CheckBox.selectedFillColor</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -3695,13 +3707,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.CheckBoxIndeterminateSelectedDisabled.selectionDisabledColor</td>
+        <td>Icons.CheckBoxSelectedDisabled.selectionDisabledColor</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%CheckBox.selectionDisabledColor</td>
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.CheckBoxSelectedDisabled.selectionDisabledColor</td>
+        <td>Icons.CheckBoxIndeterminateSelectedDisabled.selectionDisabledColor</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%CheckBox.selectionDisabledColor</td>
         <td style="background-color: #EA9C43" width="150" height="25">
@@ -3737,13 +3749,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.RadioButtonFocused.activeFillColor</td>
+        <td>Icons.RadioButton.activeFillColor</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%RadioButton.activeFillColor</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.RadioButton.activeFillColor</td>
+        <td>Icons.RadioButtonFocused.activeFillColor</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%RadioButton.activeFillColor</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -3761,13 +3773,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #00D1E5" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.RadioButtonSelectedDisabled.inactiveBorderColor</td>
+        <td>Icons.RadioButtonDisabled.inactiveBorderColor</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%RadioButton.inactiveBorderColor</td>
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.RadioButtonDisabled.inactiveBorderColor</td>
+        <td>Icons.RadioButtonSelectedDisabled.inactiveBorderColor</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%RadioButton.inactiveBorderColor</td>
         <td style="background-color: #EA9C43" width="150" height="25">
@@ -3791,13 +3803,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.RadioButtonSelectedFocused.selectedFillColor</td>
+        <td>Icons.RadioButtonSelected.selectedFillColor</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%RadioButton.selectedFillColor</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.RadioButtonSelected.selectedFillColor</td>
+        <td>Icons.RadioButtonSelectedFocused.selectedFillColor</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%RadioButton.selectedFillColor</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -3851,25 +3863,25 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.SliderDisabled.inactiveBorderColor</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%Slider.thumbBorderColorDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
         <td>Icons.VolumeSliderDisabled.inactiveBorderColor</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%Slider.thumbBorderColorDisabled</td>
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.SliderFocused.focusBorderColor</td>
+        <td>Icons.SliderDisabled.inactiveBorderColor</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%Slider.thumbBorderColorDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.VolumeSliderFocused.focusBorderColor</td>
         <td>#00D1E5 [000,209,229]</td>
         <td>%Slider.thumbFocusBorderColor</td>
         <td style="background-color: #00D1E5" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.VolumeSliderFocused.focusBorderColor</td>
+        <td>Icons.SliderFocused.focusBorderColor</td>
         <td>#00D1E5 [000,209,229]</td>
         <td>%Slider.thumbFocusBorderColor</td>
         <td style="background-color: #00D1E5" width="150" height="25">
@@ -3905,13 +3917,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #E6194B" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.pipetteRollover.color</td>
+        <td>Icons.errorDialog.color</td>
         <td>#E6194B [230,025,075]</td>
         <td>%errorIconColor</td>
         <td style="background-color: #E6194B" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.errorDialog.color</td>
+        <td>Icons.pipetteRollover.color</td>
         <td>#E6194B [230,025,075]</td>
         <td>%errorIconColor</td>
         <td style="background-color: #E6194B" width="150" height="25">
@@ -3923,19 +3935,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.textFile.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%fileIconBackground</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.image.pending.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%fileIconBackground</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.drive.color</td>
+        <td>Icons.generalFile.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%fileIconBackground</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -3947,7 +3947,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.unknownFile.color</td>
+        <td>Icons.image.missing.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%fileIconBackground</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -3959,16 +3959,34 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.generalFile.color</td>
+        <td>Icons.image.pending.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%fileIconBackground</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.image.missing.color</td>
+        <td>Icons.unknownFile.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%fileIconBackground</td>
         <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.drive.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%fileIconBackground</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.textFile.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%fileIconBackground</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.image.pending.indicator.foregroundColor</td>
+        <td>#FFFFFF [255,255,255]</td>
+        <td>%fileIconForeground</td>
+        <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
         <td>Icons.image.missing.indicator.foregroundColor</td>
@@ -3983,25 +4001,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.image.pending.indicator.foregroundColor</td>
-        <td>#FFFFFF [255,255,255]</td>
-        <td>%fileIconForeground</td>
-        <td style="background-color: #FFFFFF" width="150" height="25">
-    </tr>
-    <tr>
         <td>Icons.drive.dotColor</td>
         <td>#26D94A [038,217,074]</td>
         <td>%fileIconHighlight</td>
         <td style="background-color: #26D94A" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.image.missing.opacity</td>
+        <td>Icons.folder.opacity</td>
         <td>100</td>
         <td>%fileIconOpacity</td>
         <td></td>
     </tr>
     <tr>
-        <td>Icons.textFile.opacity</td>
+        <td>Icons.upFolder.opacity</td>
         <td>100</td>
         <td>%fileIconOpacity</td>
         <td></td>
@@ -4019,19 +4031,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>Icons.image.missing.indicator.foregroundOpacity</td>
-        <td>100</td>
-        <td>%fileIconOpacity</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Icons.folder.opacity</td>
-        <td>100</td>
-        <td>%fileIconOpacity</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Icons.upFolder.opacity</td>
+        <td>Icons.textFile.opacity</td>
         <td>100</td>
         <td>%fileIconOpacity</td>
         <td></td>
@@ -4043,19 +4043,55 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>Icons.generalFile.opacity</td>
-        <td>100</td>
-        <td>%fileIconOpacity</td>
-        <td></td>
-    </tr>
-    <tr>
         <td>Icons.image.opacity</td>
         <td>100</td>
         <td>%fileIconOpacity</td>
         <td></td>
     </tr>
     <tr>
+        <td>Icons.generalFile.opacity</td>
+        <td>100</td>
+        <td>%fileIconOpacity</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Icons.image.missing.opacity</td>
+        <td>100</td>
+        <td>%fileIconOpacity</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Icons.image.missing.indicator.foregroundOpacity</td>
+        <td>100</td>
+        <td>%fileIconOpacity</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Icons.VolumeSliderFocused.glowFocus</td>
+        <td>#00D1E5 [000,209,229]</td>
+        <td>%glowFocus</td>
+        <td style="background-color: #00D1E5" width="150" height="25">
+    </tr>
+    <tr>
         <td>Icons.SliderFocused.glowFocus</td>
+        <td>#00D1E5 [000,209,229]</td>
+        <td>%glowFocus</td>
+        <td style="background-color: #00D1E5" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.CheckBoxIndeterminateSelectedFocused.glowFocus</td>
+        <td>#00D1E5 [000,209,229]</td>
+        <td>%glowFocus</td>
+        <td style="background-color: #00D1E5" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.CheckBoxFocused.glowFocus</td>
+        <td>#00D1E5 [000,209,229]</td>
+        <td>%glowFocus</td>
+        <td style="background-color: #00D1E5" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.RadioButtonSelectedFocused.glowFocus</td>
         <td>#00D1E5 [000,209,229]</td>
         <td>%glowFocus</td>
         <td style="background-color: #00D1E5" width="150" height="25">
@@ -4073,55 +4109,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #00D1E5" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.VolumeSliderFocused.glowFocus</td>
-        <td>#00D1E5 [000,209,229]</td>
-        <td>%glowFocus</td>
-        <td style="background-color: #00D1E5" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.CheckBoxFocused.glowFocus</td>
-        <td>#00D1E5 [000,209,229]</td>
-        <td>%glowFocus</td>
-        <td style="background-color: #00D1E5" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.CheckBoxIndeterminateSelectedFocused.glowFocus</td>
-        <td>#00D1E5 [000,209,229]</td>
-        <td>%glowFocus</td>
-        <td style="background-color: #00D1E5" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.RadioButtonSelectedFocused.glowFocus</td>
-        <td>#00D1E5 [000,209,229]</td>
-        <td>%glowFocus</td>
-        <td style="background-color: #00D1E5" width="150" height="25">
-    </tr>
-    <tr>
         <td>Icons.RadioButtonFocused.glowOpacity</td>
-        <td>100</td>
-        <td>%glowOpacity</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Icons.RadioButtonSelectedFocused.glowOpacity</td>
-        <td>100</td>
-        <td>%glowOpacity</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Icons.SliderFocused.glowOpacity</td>
-        <td>100</td>
-        <td>%glowOpacity</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Icons.VolumeSliderFocused.glowOpacity</td>
-        <td>100</td>
-        <td>%glowOpacity</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Icons.CheckBoxIndeterminateSelectedFocused.glowOpacity</td>
         <td>100</td>
         <td>%glowOpacity</td>
         <td></td>
@@ -4133,7 +4121,31 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
+        <td>Icons.SliderFocused.glowOpacity</td>
+        <td>100</td>
+        <td>%glowOpacity</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Icons.RadioButtonSelectedFocused.glowOpacity</td>
+        <td>100</td>
+        <td>%glowOpacity</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Icons.CheckBoxIndeterminateSelectedFocused.glowOpacity</td>
+        <td>100</td>
+        <td>%glowOpacity</td>
+        <td></td>
+    </tr>
+    <tr>
         <td>Icons.CheckBoxFocused.glowOpacity</td>
+        <td>100</td>
+        <td>%glowOpacity</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Icons.VolumeSliderFocused.glowOpacity</td>
         <td>100</td>
         <td>%glowOpacity</td>
         <td></td>
@@ -4145,37 +4157,25 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #00D1E5" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.HelpDisabled.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.closeHovered.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.speaker0Disabled.crossColor</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.arrowDownDisabled.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
         <td>Icons.moveToLeftTopDisabled.color</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%menuIconDisabled</td>
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.speaker3Disabled.color</td>
+        <td>Icons.copyDisabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.speaker4Disabled.volumeColor</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.moveToRightBottomDisabled.color</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%menuIconDisabled</td>
         <td style="background-color: #EA9C43" width="150" height="25">
@@ -4193,73 +4193,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.arrowRightDisabled.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.moveToBottomLeftDisabled.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.arrowLeftDisabled.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.speaker1Disabled.volumeColor</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.cutDisabled.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.copyDisabled.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.searchWithHistory.disabled.arrowColor</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.searchWithHistory.disabled.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.speaker4Disabled.volumeColor</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.moveToTopRightDisabled.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.moveToTopLeftDisabled.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.speaker3Disabled.volumeColor</td>
+        <td>Icons.speaker4Disabled.color</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%menuIconDisabled</td>
         <td style="background-color: #EA9C43" width="150" height="25">
@@ -4271,31 +4205,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.arrowUpDisabled.color</td>
+        <td>Icons.speaker0Disabled.crossColor</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%menuIconDisabled</td>
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.moveToRightTopDisabled.color</td>
+        <td>Icons.speaker1Disabled.volumeColor</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%menuIconDisabled</td>
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.moveToBottomRightDisabled.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.pasteDisabled.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.search.disabled.color</td>
+        <td>Icons.moveToTopRightDisabled.color</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%menuIconDisabled</td>
         <td style="background-color: #EA9C43" width="150" height="25">
@@ -4307,13 +4229,109 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
+        <td>Icons.moveToRightTopDisabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.arrowDownDisabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
         <td>Icons.speaker2Disabled.volumeColor</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%menuIconDisabled</td>
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.moveToRightBottomDisabled.color</td>
+        <td>Icons.arrowRightDisabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.closeHovered.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.pasteDisabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.searchWithHistory.disabled.arrowColor</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.moveToBottomRightDisabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.searchWithHistory.disabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.speaker3Disabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.moveToTopLeftDisabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.arrowLeftDisabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.search.disabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.cutDisabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.moveToBottomLeftDisabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.speaker3Disabled.volumeColor</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.HelpDisabled.color</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%menuIconDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.arrowUpDisabled.color</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%menuIconDisabled</td>
         <td style="background-color: #EA9C43" width="150" height="25">
@@ -4325,85 +4343,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.speaker4Disabled.color</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%menuIconDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.groupBy.color</td>
+        <td>Icons.arrowRight.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconEnabled</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.add.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.speaker2.volumeColor</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.arrowDivider.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.speaker0.crossColor</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.arrowDown.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.verticalGlue.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.searchWithHistory.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.speaker3.volumeColor</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.Help.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.newFolder.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.frame.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.clear.color</td>
+        <td>Icons.plus.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconEnabled</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -4415,31 +4361,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.listFiles.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.moveToRightBottom.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.paste.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.search.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.eye.color</td>
+        <td>Icons.minus.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconEnabled</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -4451,181 +4373,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.moveToBottomLeft.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.separatorH.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.separatorV.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.moveToLeftBottom.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
         <td>Icons.arrowSplitCenterH.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconEnabled</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.close.color</td>
+        <td>Icons.speaker2.volumeColor</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconEnabled</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.homeFolder.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.moveToBottomRight.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.pipette.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.speaker1.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.searchWithHistory.arrowColor</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.arrowUpSort.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.speaker4.volumeColor</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.moveToLeftTop.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.arrowRight.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.moreTabs.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.speaker2.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.minus.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.cut.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.arrowDownSort.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.moveToRightTop.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.copy.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.arrowUp.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.speaker0.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.delete.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.moreTabs.arrowColor</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.moveToTopLeft.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.speaker3.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.arrowSplitCenterV.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconEnabled</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.speaker1.volumeColor</td>
+        <td>Icons.arrowDown.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconEnabled</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -4637,7 +4397,133 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.plus.color</td>
+        <td>Icons.moveToBottomRight.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.separatorV.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.moveToLeftTop.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.eye.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.clear.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.listFiles.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.moveToRightTop.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.moreTabs.arrowColor</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.cut.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.arrowSplitCenterV.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.add.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.searchWithHistory.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.settings.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.horizontalGrip.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.close.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.arrowUp.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.moreTabs.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.speaker4.volumeColor</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.arrowUpSort.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.speaker2.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.arrowDownSort.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.verticalGlue.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconEnabled</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -4655,25 +4541,31 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.horizontalGlue.color</td>
+        <td>Icons.search.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconEnabled</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.horizontalGrip.color</td>
+        <td>Icons.homeFolder.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconEnabled</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.arrowLeft.color</td>
+        <td>Icons.speaker3.volumeColor</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconEnabled</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.settings.color</td>
+        <td>Icons.paste.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.searchWithHistory.arrowColor</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconEnabled</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -4685,16 +4577,130 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
+        <td>Icons.delete.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.newFolder.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.speaker0.crossColor</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.arrowDivider.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.speaker1.volumeColor</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.speaker3.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
         <td>Icons.save.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconEnabled</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.upFolder.arrowColor</td>
-        <td>#00D1E5 [000,209,229]</td>
-        <td>%menuIconHighlight</td>
-        <td style="background-color: #00D1E5" width="150" height="25">
+        <td>Icons.groupBy.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.moveToRightBottom.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.arrowLeft.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.moveToTopLeft.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.pipette.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.separatorH.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.copy.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.moveToBottomLeft.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.frame.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.moveToLeftBottom.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.horizontalGlue.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.speaker1.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.speaker0.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.Help.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconEnabled</td>
+        <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
         <td>Icons.unknownFile.questionColor</td>
@@ -4703,16 +4709,10 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #00D1E5" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.arrowLeftHover.color</td>
-        <td>#FFFFFF [255,255,255]</td>
-        <td>%menuIconHovered</td>
-        <td style="background-color: #FFFFFF" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.arrowRightHover.color</td>
-        <td>#FFFFFF [255,255,255]</td>
-        <td>%menuIconHovered</td>
-        <td style="background-color: #FFFFFF" width="150" height="25">
+        <td>Icons.upFolder.arrowColor</td>
+        <td>#00D1E5 [000,209,229]</td>
+        <td>%menuIconHighlight</td>
+        <td style="background-color: #00D1E5" width="150" height="25">
     </tr>
     <tr>
         <td>Icons.arrowDownHover.color</td>
@@ -4727,19 +4727,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
+        <td>Icons.arrowLeftHover.color</td>
+        <td>#FFFFFF [255,255,255]</td>
+        <td>%menuIconHovered</td>
+        <td style="background-color: #FFFFFF" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.arrowRightHover.color</td>
+        <td>#FFFFFF [255,255,255]</td>
+        <td>%menuIconHovered</td>
+        <td style="background-color: #FFFFFF" width="150" height="25">
+    </tr>
+    <tr>
         <td>Icons.moreTabs.opacity</td>
-        <td>100</td>
-        <td>%menuIconOpacity</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Icons.clear.opacity</td>
-        <td>100</td>
-        <td>%menuIconOpacity</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Icons.closeHovered.opacity</td>
         <td>100</td>
         <td>%menuIconOpacity</td>
         <td></td>
@@ -4757,19 +4757,37 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
+        <td>Icons.closeHovered.opacity</td>
+        <td>100</td>
+        <td>%menuIconOpacity</td>
+        <td></td>
+    </tr>
+    <tr>
         <td>Icons.close.opacity</td>
         <td>100</td>
         <td>%menuIconOpacity</td>
         <td></td>
     </tr>
     <tr>
-        <td>Icons.minusSelected.color</td>
+        <td>Icons.clear.opacity</td>
+        <td>100</td>
+        <td>%menuIconOpacity</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Icons.arrowDownSelected.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconSelected</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
         <td>Icons.plusSelected.color</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%menuIconSelected</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.arrowRightSelected.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconSelected</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -4787,25 +4805,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.arrowDownSelected.color</td>
+        <td>Icons.minusSelected.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%menuIconSelected</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.arrowRightSelected.color</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%menuIconSelected</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.groupBy.selected.color</td>
+        <td>Icons.listFiles.selected.color</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%menuIconSelectedSecondary</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.listFiles.selected.color</td>
+        <td>Icons.groupBy.selected.color</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%menuIconSelectedSecondary</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -4859,13 +4871,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.windowMinimize.color</td>
+        <td>Icons.windowRestore.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%windowButton</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.windowRestore.color</td>
+        <td>Icons.windowMinimize.color</td>
         <td>#000000 [000,000,000]</td>
         <td>%windowButton</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -4883,19 +4895,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Icons.windowRestoreInactive.color</td>
-        <td>#666666 [102,102,102]</td>
-        <td>%windowButtonDisabled</td>
-        <td style="background-color: #666666" width="150" height="25">
-    </tr>
-    <tr>
         <td>Icons.windowCloseInactive.color</td>
-        <td>#666666 [102,102,102]</td>
-        <td>%windowButtonDisabled</td>
-        <td style="background-color: #666666" width="150" height="25">
-    </tr>
-    <tr>
-        <td>Icons.windowMaximizeInactive.color</td>
         <td>#666666 [102,102,102]</td>
         <td>%windowButtonDisabled</td>
         <td style="background-color: #666666" width="150" height="25">
@@ -4907,7 +4907,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #666666" width="150" height="25">
     </tr>
     <tr>
+        <td>Icons.windowRestoreInactive.color</td>
+        <td>#666666 [102,102,102]</td>
+        <td>%windowButtonDisabled</td>
+        <td style="background-color: #666666" width="150" height="25">
+    </tr>
+    <tr>
         <td>Icons.windowHelpInactive.color</td>
+        <td>#666666 [102,102,102]</td>
+        <td>%windowButtonDisabled</td>
+        <td style="background-color: #666666" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Icons.windowMaximizeInactive.color</td>
         <td>#666666 [102,102,102]</td>
         <td>%windowButtonDisabled</td>
         <td style="background-color: #666666" width="150" height="25">
@@ -4987,16 +4999,16 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="padding:0px" align="center"><img src="img/DarkInternalFrameBorder.png" alt="InternalFrame.border"></td>
     </tr>
     <tr>
-        <td>InternalFrame.paletteBorder</td>
-        <td>DarkInternalFrameBorder</td>
-        <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkInternalFrameBorder.png" alt="InternalFrame.paletteBorder"></td>
-    </tr>
-    <tr>
         <td>InternalFrame.optionDialogBorder</td>
         <td>DarkInternalFrameBorder</td>
         <td></td>
         <td style="padding:0px" align="center"><img src="img/DarkInternalFrameBorder.png" alt="InternalFrame.optionDialogBorder"></td>
+    </tr>
+    <tr>
+        <td>InternalFrame.paletteBorder</td>
+        <td>DarkInternalFrameBorder</td>
+        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkInternalFrameBorder.png" alt="InternalFrame.paletteBorder"></td>
     </tr>
     <tr>
         <td>InternalFrame.background</td>
@@ -5116,13 +5128,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>InternalFrameTitlePane.backgroundColor</td>
+        <td>InternalFrameTitlePane.buttonColor</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%background</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>InternalFrameTitlePane.buttonColor</td>
+        <td>InternalFrameTitlePane.backgroundColor</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%background</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -5447,7 +5459,25 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
+        <td>List.noFocusBorder</td>
+        <td>DarkListBorder</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>List.cellNoFocusBorder</td>
+        <td>DarkListCellBorder</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>List.focusSelectedCellHighlightBorder</td>
+        <td>DarkListCellFocusBorder</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>List.focusCellHighlightBorder</td>
         <td>DarkListCellBorder</td>
         <td></td>
         <td></td>
@@ -5459,26 +5489,8 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>List.focusSelectedCellHighlightBorder</td>
-        <td>DarkListCellFocusBorder</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>List.noFocusBorder</td>
-        <td>DarkListBorder</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
         <td>List.cellRenderer</td>
         <td>DarkDefaultListCellRenderer</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>List.focusCellHighlightBorder</td>
-        <td>DarkListCellBorder</td>
         <td></td>
         <td></td>
     </tr>
@@ -5649,13 +5661,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <th>Preview</th>
     </tr>
     <tr>
-        <td>MacOS.OptionPane.warningDialog.titlePane.background</td>
+        <td>MacOS.OptionPane.errorDialog.titlePane.background</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%background</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>MacOS.OptionPane.errorDialog.titlePane.background</td>
+        <td>MacOS.TitlePane.background</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%background</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -5667,7 +5679,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>MacOS.TitlePane.background</td>
+        <td>MacOS.OptionPane.warningDialog.titlePane.background</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%background</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -5685,12 +5697,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #191919" width="150" height="25">
     </tr>
     <tr>
-        <td>MacOS.OptionPane.questionDialog.titlePane.foreground</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%textForeground</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
         <td>MacOS.OptionPane.errorDialog.titlePane.foreground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
@@ -5698,6 +5704,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </tr>
     <tr>
         <td>MacOS.OptionPane.warningDialog.titlePane.foreground</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%textForeground</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>MacOS.OptionPane.questionDialog.titlePane.foreground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -6145,13 +6157,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>MenuItem.acceleratorForeground</td>
+        <td>MenuItem.acceleratorSelectionForeground</td>
         <td>#191919 [025,025,025]</td>
         <td>%acceleratorForeground</td>
         <td style="background-color: #191919" width="150" height="25">
     </tr>
     <tr>
-        <td>MenuItem.acceleratorSelectionForeground</td>
+        <td>MenuItem.acceleratorForeground</td>
         <td>#191919 [025,025,025]</td>
         <td>%acceleratorForeground</td>
         <td style="background-color: #191919" width="150" height="25">
@@ -6608,13 +6620,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>PasswordField.inactiveBackground</td>
+        <td>PasswordField.disabledBackground</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>PasswordField.disabledBackground</td>
+        <td>PasswordField.inactiveBackground</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -7458,13 +7470,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>RadioButtonMenuItem.acceleratorSelectionForeground</td>
+        <td>RadioButtonMenuItem.acceleratorForeground</td>
         <td>#191919 [025,025,025]</td>
         <td>%acceleratorForeground</td>
         <td style="background-color: #191919" width="150" height="25">
     </tr>
     <tr>
-        <td>RadioButtonMenuItem.acceleratorForeground</td>
+        <td>RadioButtonMenuItem.acceleratorSelectionForeground</td>
         <td>#191919 [025,025,025]</td>
         <td>%acceleratorForeground</td>
         <td style="background-color: #191919" width="150" height="25">
@@ -7546,34 +7558,16 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
+        <td>RootPane.questionDialogBorder</td>
+        <td>DarkRootPaneBorder</td>
+        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.questionDialogBorder"></td>
+    </tr>
+    <tr>
         <td>RootPane.informationDialogBorder</td>
         <td>DarkRootPaneBorder</td>
         <td></td>
         <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.informationDialogBorder"></td>
-    </tr>
-    <tr>
-        <td>RootPane.warningDialogBorder</td>
-        <td>DarkRootPaneBorder</td>
-        <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.warningDialogBorder"></td>
-    </tr>
-    <tr>
-        <td>RootPane.errorDialogBorder</td>
-        <td>DarkRootPaneBorder</td>
-        <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.errorDialogBorder"></td>
-    </tr>
-    <tr>
-        <td>RootPane.frameBorder</td>
-        <td>DarkRootPaneBorder</td>
-        <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.frameBorder"></td>
-    </tr>
-    <tr>
-        <td>RootPane.plainDialogBorder</td>
-        <td>DarkRootPaneBorder</td>
-        <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.plainDialogBorder"></td>
     </tr>
     <tr>
         <td>RootPane.colorChooserDialogBorder</td>
@@ -7582,16 +7576,34 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.colorChooserDialogBorder"></td>
     </tr>
     <tr>
-        <td>RootPane.questionDialogBorder</td>
+        <td>RootPane.frameBorder</td>
         <td>DarkRootPaneBorder</td>
         <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.questionDialogBorder"></td>
+        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.frameBorder"></td>
     </tr>
     <tr>
         <td>RootPane.fileChooserDialogBorder</td>
         <td>DarkRootPaneBorder</td>
         <td></td>
         <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.fileChooserDialogBorder"></td>
+    </tr>
+    <tr>
+        <td>RootPane.plainDialogBorder</td>
+        <td>DarkRootPaneBorder</td>
+        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.plainDialogBorder"></td>
+    </tr>
+    <tr>
+        <td>RootPane.errorDialogBorder</td>
+        <td>DarkRootPaneBorder</td>
+        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.errorDialogBorder"></td>
+    </tr>
+    <tr>
+        <td>RootPane.warningDialogBorder</td>
+        <td>DarkRootPaneBorder</td>
+        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.warningDialogBorder"></td>
     </tr>
     <tr>
         <td>RootPane.background</td>
@@ -7646,6 +7658,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
+        <td>ScrollBar.thumbAlpha</td>
+        <td>100</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>ScrollBar.focusInputMap.RightToLeft</td>
         <td>InputMapUIResource</td>
         <td></td>
@@ -7670,12 +7688,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>ScrollBar.fadeEndColor</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%ScrollBar.fadeStartColor</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
         <td>ScrollBar.background</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%background</td>
@@ -7688,10 +7700,16 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
+        <td>ScrollBar.fadeEndColor</td>
+        <td>#0B0B0B [011,011,011]</td>
+        <td>%controlFadeEndSecondary</td>
+        <td style="background-color: #0B0B0B" width="150" height="25">
+    </tr>
+    <tr>
         <td>ScrollBar.fadeStartColor</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%controlFadeStart</td>
-        <td style="background-color: #000000" width="150" height="25">
+        <td>#6B6B6B [107,107,107]</td>
+        <td>%controlFadeStartSecondary</td>
+        <td style="background-color: #6B6B6B" width="150" height="25">
     </tr>
     <tr>
         <td>ScrollBar.thumb</td>
@@ -7916,13 +7934,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>Slider.focusInputMap.RightToLeft</td>
+        <td>Slider.focusInputMap</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>Slider.focusInputMap</td>
+        <td>Slider.focusInputMap.RightToLeft</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
@@ -7958,12 +7976,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #00D1E5" width="150" height="25">
     </tr>
     <tr>
-        <td>Slider.inactiveThumbFill</td>
-        <td>#EA9C43 [234,156,067]</td>
-        <td>%controlFillDisabled</td>
-        <td style="background-color: #EA9C43" width="150" height="25">
-    </tr>
-    <tr>
         <td>Slider.volume.inactiveThumbFill</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%controlFillDisabled</td>
@@ -7971,6 +7983,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </tr>
     <tr>
         <td>Slider.disabledTrackColor</td>
+        <td>#EA9C43 [234,156,067]</td>
+        <td>%controlFillDisabled</td>
+        <td style="background-color: #EA9C43" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Slider.inactiveThumbFill</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%controlFillDisabled</td>
         <td style="background-color: #EA9C43" width="150" height="25">
@@ -7988,13 +8006,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #B0B0BD" width="150" height="25">
     </tr>
     <tr>
-        <td>Slider.volume.activeThumbFill</td>
+        <td>Slider.selectedTrackColor</td>
         <td>#000000 [000,000,000]</td>
         <td>%controlFillSecondary</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>Slider.selectedTrackColor</td>
+        <td>Slider.volume.activeThumbFill</td>
         <td>#000000 [000,000,000]</td>
         <td>%controlFillSecondary</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -9328,25 +9346,25 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #DACCE5" width="150" height="25">
     </tr>
     <tr>
-        <td>TabFramePopup.headerHoverBackground</td>
-        <td>#7FD7F0 [127,215,240]</td>
-        <td>%backgroundHover</td>
-        <td style="background-color: #7FD7F0" width="150" height="25">
-    </tr>
-    <tr>
         <td>TabFramePopup.headerSelectedHoverBackground</td>
         <td>#7FD7F0 [127,215,240]</td>
         <td>%backgroundHover</td>
         <td style="background-color: #7FD7F0" width="150" height="25">
     </tr>
     <tr>
-        <td>TabFramePopup.headerFocusHoverBackground</td>
+        <td>TabFramePopup.headerHoverBackground</td>
+        <td>#7FD7F0 [127,215,240]</td>
+        <td>%backgroundHover</td>
+        <td style="background-color: #7FD7F0" width="150" height="25">
+    </tr>
+    <tr>
+        <td>TabFramePopup.headerFocusSelectedHoverBackground</td>
         <td>#A426FF [164,038,255]</td>
         <td>%backgroundHoverColorful</td>
         <td style="background-color: #A426FF" width="150" height="25">
     </tr>
     <tr>
-        <td>TabFramePopup.headerFocusSelectedHoverBackground</td>
+        <td>TabFramePopup.headerFocusHoverBackground</td>
         <td>#A426FF [164,038,255]</td>
         <td>%backgroundHoverColorful</td>
         <td style="background-color: #A426FF" width="150" height="25">
@@ -9694,13 +9712,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>TabbedPane.ancestorInputMap</td>
+        <td>TabbedPane.focusInputMap</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>TabbedPane.focusInputMap</td>
+        <td>TabbedPane.ancestorInputMap</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
@@ -9712,25 +9730,25 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="padding:0px" align="center"><img src="img/DarkTabbedPaneBorder.png" alt="TabbedPane.border"></td>
     </tr>
     <tr>
-        <td>TabbedPane.tabAreaBackground</td>
-        <td>#FFFFFF [255,255,255]</td>
-        <td>%background</td>
-        <td style="background-color: #FFFFFF" width="150" height="25">
-    </tr>
-    <tr>
         <td>TabbedPane.background</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%background</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>TabbedPane.hoverBackground</td>
+        <td>TabbedPane.tabAreaBackground</td>
+        <td>#FFFFFF [255,255,255]</td>
+        <td>%background</td>
+        <td style="background-color: #FFFFFF" width="150" height="25">
+    </tr>
+    <tr>
+        <td>TabbedPane.selectedHoverBackground</td>
         <td>#7FD7F0 [127,215,240]</td>
         <td>%backgroundHover</td>
         <td style="background-color: #7FD7F0" width="150" height="25">
     </tr>
     <tr>
-        <td>TabbedPane.selectedHoverBackground</td>
+        <td>TabbedPane.hoverBackground</td>
         <td>#7FD7F0 [127,215,240]</td>
         <td>%backgroundHover</td>
         <td style="background-color: #7FD7F0" width="150" height="25">
@@ -9938,16 +9956,28 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>Table.scrollPaneBorder</td>
-        <td>DarkTableScrollPaneBorder</td>
+        <td>Table.cellEditorBorder</td>
+        <td>DarkTableCellBorder</td>
         <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkTableScrollPaneBorder.png" alt="Table.scrollPaneBorder"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Table.focusCellHighlightBorder</td>
+        <td>DarkTableCellFocusBorder</td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
         <td>Table.border</td>
         <td>null</td>
         <td></td>
         <td></td>
+    </tr>
+    <tr>
+        <td>Table.scrollPaneBorder</td>
+        <td>DarkTableScrollPaneBorder</td>
+        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkTableScrollPaneBorder.png" alt="Table.scrollPaneBorder"></td>
     </tr>
     <tr>
         <td>Table.focusSelectedCellHighlightBorder</td>
@@ -9958,18 +9988,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     <tr>
         <td>Table.cellNoFocusBorder</td>
         <td>DarkTableCellBorder</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Table.cellEditorBorder</td>
-        <td>DarkTableCellBorder</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Table.focusCellHighlightBorder</td>
-        <td>DarkTableCellFocusBorder</td>
         <td></td>
         <td></td>
     </tr>
@@ -10112,13 +10130,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #00D1E5" width="150" height="25">
     </tr>
     <tr>
-        <td>Table.dropLineShortColor</td>
+        <td>Table.dropLineColor</td>
         <td>#00EAFF [000,234,255]</td>
         <td>%dropForeground</td>
         <td style="background-color: #00EAFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Table.dropLineColor</td>
+        <td>Table.dropLineShortColor</td>
         <td>#00EAFF [000,234,255]</td>
         <td>%dropForeground</td>
         <td style="background-color: #00EAFF" width="150" height="25">
@@ -10237,7 +10255,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>TableHeader.focusCellBorder</td>
+        <td>TableHeader.cellBorder</td>
         <td>DarkTableCellBorder</td>
         <td></td>
         <td></td>
@@ -10249,19 +10267,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="padding:0px" align="center"><img src="img/DarkTableHeaderBorder.png" alt="TableHeader.border"></td>
     </tr>
     <tr>
-        <td>TableHeader.cellBorder</td>
+        <td>TableHeader.focusCellBorder</td>
         <td>DarkTableCellBorder</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>TableHeader.background</td>
+        <td>TableHeader.focusCellBackground</td>
         <td>#7F7FFF [127,127,255]</td>
         <td>%backgroundHeader</td>
         <td style="background-color: #7F7FFF" width="150" height="25">
     </tr>
     <tr>
-        <td>TableHeader.focusCellBackground</td>
+        <td>TableHeader.background</td>
         <td>#7F7FFF [127,127,255]</td>
         <td>%backgroundHeader</td>
         <td style="background-color: #7F7FFF" width="150" height="25">
@@ -10307,13 +10325,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>TaskPane.titleForeground</td>
+        <td>TaskPane.specialTitleBackground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>TaskPane.specialTitleBackground</td>
+        <td>TaskPane.foreground</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%textForeground</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>TaskPane.titleForeground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -10331,25 +10355,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>TaskPane.foreground</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%textForeground</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
         <td>TaskPane.background</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%widgetFill</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>TaskPane.titleBackgroundGradientStart</td>
+        <td>TaskPane.titleBackgroundGradientEnd</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%widgetFillInactive</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>TaskPane.titleBackgroundGradientEnd</td>
+        <td>TaskPane.titleBackgroundGradientStart</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%widgetFillInactive</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -10468,13 +10486,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>TextArea.disabledBackground</td>
+        <td>TextArea.inactiveBackground</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>TextArea.inactiveBackground</td>
+        <td>TextArea.disabledBackground</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
@@ -10724,13 +10742,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>TextField.focusArc</td>
+        <td>TextField.searchFocusArc</td>
         <td>5</td>
         <td>%arcFocus</td>
         <td></td>
     </tr>
     <tr>
-        <td>TextField.searchFocusArc</td>
+        <td>TextField.focusArc</td>
         <td>5</td>
         <td>%arcFocus</td>
         <td></td>
@@ -10772,13 +10790,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>TextField.border.warning</td>
+        <td>TextField.border.focusWarning</td>
         <td>#CE5B0A [206,091,010]</td>
         <td>%glowWarningLine</td>
         <td style="background-color: #CE5B0A" width="150" height="25">
     </tr>
     <tr>
-        <td>TextField.border.focusWarning</td>
+        <td>TextField.border.warning</td>
         <td>#CE5B0A [206,091,010]</td>
         <td>%glowWarningLine</td>
         <td style="background-color: #CE5B0A" width="150" height="25">
@@ -11221,13 +11239,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>ToggleButton.disabledSliderKnobFillColor</td>
+        <td>ToggleButton.disabledSliderKnobBorderColor</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%controlFillDisabled</td>
         <td style="background-color: #EA9C43" width="150" height="25">
     </tr>
     <tr>
-        <td>ToggleButton.disabledSliderKnobBorderColor</td>
+        <td>ToggleButton.disabledSliderKnobFillColor</td>
         <td>#EA9C43 [234,156,067]</td>
         <td>%controlFillDisabled</td>
         <td style="background-color: #EA9C43" width="150" height="25">
@@ -11251,13 +11269,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>ToggleButton.disabledText</td>
+        <td>ToggleButton.activeFillColor</td>
         <td>#E0861F [224,134,031]</td>
         <td>%textForegroundInactive</td>
         <td style="background-color: #E0861F" width="150" height="25">
     </tr>
     <tr>
-        <td>ToggleButton.activeFillColor</td>
+        <td>ToggleButton.disabledText</td>
         <td>#E0861F [224,134,031]</td>
         <td>%textForegroundInactive</td>
         <td style="background-color: #E0861F" width="150" height="25">
@@ -11321,16 +11339,16 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>ToolBar.rolloverBorder</td>
-        <td>DarkToolBarBorder</td>
-        <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkToolBarBorder.png" alt="ToolBar.rolloverBorder"></td>
-    </tr>
-    <tr>
         <td>ToolBar.border</td>
         <td>DarkToolBarBorder</td>
         <td></td>
         <td style="padding:0px" align="center"><img src="img/DarkToolBarBorder.png" alt="ToolBar.border"></td>
+    </tr>
+    <tr>
+        <td>ToolBar.rolloverBorder</td>
+        <td>DarkToolBarBorder</td>
+        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkToolBarBorder.png" alt="ToolBar.rolloverBorder"></td>
     </tr>
     <tr>
         <td>ToolBar.nonrolloverBorder</td>
@@ -11363,7 +11381,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>ToolBar.foreground</td>
+        <td>ToolBar.floatingForeground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -11375,7 +11393,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>ToolBar.floatingForeground</td>
+        <td>ToolBar.foreground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -11845,13 +11863,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #00EAFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Tree.lineUnselected</td>
+        <td>Tree.lineSelected</td>
         <td>#191919 [025,025,025]</td>
         <td>%gridLine</td>
         <td style="background-color: #191919" width="150" height="25">
     </tr>
     <tr>
-        <td>Tree.lineSelected</td>
+        <td>Tree.lineUnselected</td>
         <td>#191919 [025,025,025]</td>
         <td>%gridLine</td>
         <td style="background-color: #191919" width="150" height="25">
@@ -12324,31 +12342,25 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #B0B0BD" width="150" height="25">
     </tr>
     <tr>
-        <td>global.textForeground</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%textForeground</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
         <td>global.foreground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
+        <td>global.textForeground</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%textForeground</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>global.foregroundInactive</td>
+        <td>#E0861F [224,134,031]</td>
+        <td>%textForegroundInactive</td>
+        <td style="background-color: #E0861F" width="150" height="25">
+    </tr>
+    <tr>
         <td>global.selectionInactiveForeground</td>
-        <td>#E0861F [224,134,031]</td>
-        <td>%textForegroundInactive</td>
-        <td style="background-color: #E0861F" width="150" height="25">
-    </tr>
-    <tr>
-        <td>global.inactiveForeground</td>
-        <td>#E0861F [224,134,031]</td>
-        <td>%textForegroundInactive</td>
-        <td style="background-color: #E0861F" width="150" height="25">
-    </tr>
-    <tr>
-        <td>global.disabledForeground</td>
         <td>#E0861F [224,134,031]</td>
         <td>%textForegroundInactive</td>
         <td style="background-color: #E0861F" width="150" height="25">
@@ -12360,7 +12372,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #E0861F" width="150" height="25">
     </tr>
     <tr>
-        <td>global.foregroundInactive</td>
+        <td>global.disabledForeground</td>
+        <td>#E0861F [224,134,031]</td>
+        <td>%textForegroundInactive</td>
+        <td style="background-color: #E0861F" width="150" height="25">
+    </tr>
+    <tr>
+        <td>global.inactiveForeground</td>
         <td>#E0861F [224,134,031]</td>
         <td>%textForegroundInactive</td>
         <td style="background-color: #E0861F" width="150" height="25">
