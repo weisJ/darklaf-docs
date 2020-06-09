@@ -2313,6 +2313,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="padding:0px" align="center"><img src="img/Font[family=Dialog,name=Dialog,style=plain,size=12].png" alt="DesktopIcon.font"></td>
     </tr>
     <tr>
+        <td>DesktopIcon.labelPad</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>DesktopIcon.width</td>
         <td>160</td>
         <td></td>
@@ -2390,7 +2396,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </tr>
     <tr>
         <td>DesktopPaneUI</td>
-        <td>javax.swing.plaf.basic.BasicDesktopPaneUI</td>
+        <td>com.github.weisj.darklaf.ui.internalframe.DarkDesktopPaneUI</td>
         <td></td>
         <td></td>
     </tr>
@@ -4475,6 +4481,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
+        <td>InternalFrame.useExternalMenuBar</td>
+        <td>false</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>InternalFrame.titleFont</td>
         <td>Font [family=Dialog,name=Dialog,style=plain,size=11]</td>
         <td></td>
@@ -4487,10 +4499,16 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>InternalFrame.border</td>
+        <td>InternalFrame.shadowSize</td>
+        <td>12</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>InternalFrame.optionDialogBorder</td>
         <td>DarkInternalFrameBorder</td>
         <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkInternalFrameBorder.png" alt="InternalFrame.border"></td>
+        <td style="padding:0px" align="center"><img src="img/DarkInternalFrameBorder.png" alt="InternalFrame.optionDialogBorder"></td>
     </tr>
     <tr>
         <td>InternalFrame.paletteBorder</td>
@@ -4499,10 +4517,10 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="padding:0px" align="center"><img src="img/DarkInternalFrameBorder.png" alt="InternalFrame.paletteBorder"></td>
     </tr>
     <tr>
-        <td>InternalFrame.optionDialogBorder</td>
+        <td>InternalFrame.border</td>
         <td>DarkInternalFrameBorder</td>
         <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkInternalFrameBorder.png" alt="InternalFrame.optionDialogBorder"></td>
+        <td style="padding:0px" align="center"><img src="img/DarkInternalFrameBorder.png" alt="InternalFrame.border"></td>
     </tr>
     <tr>
         <td>InternalFrame.background</td>
@@ -4521,6 +4539,18 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td>#000000 [000,000,000]</td>
         <td>%shadow</td>
         <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>InternalFrame.inactiveShadowOpacity</td>
+        <td>10</td>
+        <td>%shadowOpacityLight</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>InternalFrame.activeShadowOpacity</td>
+        <td>20</td>
+        <td>%shadowOpacityStrong</td>
+        <td></td>
     </tr>
     <tr>
         <td>InternalFrame.activeTitleForeground</td>
@@ -4589,6 +4619,28 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </tr>
 </table>
 
+<h3>InternalFrameMenuBar</h3>
+<table>
+    <tr>
+        <th>Key</th>
+        <th>Value</th>
+        <th>Reference</th>
+        <th>Preview</th>
+    </tr>
+    <tr>
+        <td>InternalFrameMenuBar.background</td>
+        <td>#F2F2F2 [242,242,242]</td>
+        <td>%background</td>
+        <td style="background-color: #F2F2F2" width="150" height="25">
+    </tr>
+    <tr>
+        <td>InternalFrameMenuBar.borderColor</td>
+        <td>#D1D1D1 [209,209,209]</td>
+        <td>%borderSecondary</td>
+        <td style="background-color: #D1D1D1" width="150" height="25">
+    </tr>
+</table>
+
 <h3>InternalFrameTitlePane</h3>
 <table>
     <tr>
@@ -4628,13 +4680,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #F2F2F2" width="150" height="25">
     </tr>
     <tr>
-        <td>InternalFrameTitlePane.selectedButtonColor</td>
+        <td>InternalFrameTitlePane.selectedBackgroundColor</td>
         <td>#E6EBF0 [230,235,240]</td>
         <td>%backgroundColorful</td>
         <td style="background-color: #E6EBF0" width="150" height="25">
     </tr>
     <tr>
-        <td>InternalFrameTitlePane.selectedBackgroundColor</td>
+        <td>InternalFrameTitlePane.selectedButtonColor</td>
         <td>#E6EBF0 [230,235,240]</td>
         <td>%backgroundColorful</td>
         <td style="background-color: #E6EBF0" width="150" height="25">
@@ -4693,27 +4745,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>InternalFrameTitlePane.minimize.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.windowRestore.color">
-                        <stop offset="0" stop-color="#A9A9A9"/>
-                        <stop offset="1" stop-color="#A9A9A9"/>
-                    </linearGradient>
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                    <path fill="#050708" d="M5,8 L5,7 L7,7 L7,1 L1,1 L1,3 L0,3 L0,0 L8,0 L8,8 L5,8 Z"
-                          transform="translate(5 3)"/>
-                    <path fill="#050708" d="M0,0 L8,0 L8,8 L0,8 L0,0 Z M1,1 L1,7 L7,7 L7,1 L1,1 Z"
-                          transform="translate(3 5)"/>
-                </g>
-            </svg>
-        </td>
-    </tr>
-    <tr>
         <td>InternalFrameTitlePane.close.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
@@ -4745,6 +4776,27 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                     </linearGradient>
                 </defs>
                 <rect width="10" height="1" x="3" y="8" fill="#050708" fill-rule="evenodd"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>InternalFrameTitlePane.minimize.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.windowRestore.color">
+                        <stop offset="0" stop-color="#A9A9A9"/>
+                        <stop offset="1" stop-color="#A9A9A9"/>
+                    </linearGradient>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <path fill="#050708" d="M5,8 L5,7 L7,7 L7,1 L1,1 L1,3 L0,3 L0,0 L8,0 L8,8 L5,8 Z"
+                          transform="translate(5 3)"/>
+                    <path fill="#050708" d="M0,0 L8,0 L8,8 L0,8 L0,0 Z M1,1 L1,7 L7,7 L7,1 L1,1 Z"
+                          transform="translate(3 5)"/>
+                </g>
             </svg>
         </td>
     </tr>
@@ -4841,20 +4893,20 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>List.focusCellHighlightBorder</td>
-        <td>DarkListCellBorder</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
         <td>List.focusSelectedCellHighlightBorder</td>
         <td>DarkListCellFocusBorder</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>List.cellRenderer</td>
-        <td>DarkDefaultListCellRenderer</td>
+        <td>List.border</td>
+        <td>DarkListBorder</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>List.focusCellHighlightBorder</td>
+        <td>DarkListCellBorder</td>
         <td></td>
         <td></td>
     </tr>
@@ -4865,8 +4917,8 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>List.border</td>
-        <td>DarkListBorder</td>
+        <td>List.cellRenderer</td>
+        <td>DarkDefaultListCellRenderer</td>
         <td></td>
         <td></td>
     </tr>
@@ -5157,13 +5209,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>Menu.acceleratorForeground</td>
+        <td>Menu.acceleratorSelectionForeground</td>
         <td>#505050 [080,080,080]</td>
         <td>%acceleratorForeground</td>
         <td style="background-color: #505050" width="150" height="25">
     </tr>
     <tr>
-        <td>Menu.acceleratorSelectionForeground</td>
+        <td>Menu.acceleratorForeground</td>
         <td>#505050 [080,080,080]</td>
         <td>%acceleratorForeground</td>
         <td style="background-color: #505050" width="150" height="25">
@@ -5205,23 +5257,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>Menu.arrowHover.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.arrowRightHover.color">
-                        <stop offset="0" stop-color="#dddddd"/>
-                        <stop offset="1" stop-color="#dddddd"/>
-                    </linearGradient>
-                </defs>
-                <polygon fill="#ECECEC" fill-rule="evenodd" points="8.5 5.5 13 10.5 4 10.5"
-                         transform="matrix(0 -1 -1 0 16.5 16.5)"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
         <td>Menu.arrowIcon</td>
         <td>Icon [16,16]</td>
         <td></td>
@@ -5234,6 +5269,23 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                     </linearGradient>
                 </defs>
                 <polygon fill="#6E6E6E" fill-rule="evenodd" points="8.5 5.5 13 10.5 4 10.5"
+                         transform="matrix(0 -1 -1 0 16.5 16.5)"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>Menu.arrowHover.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.arrowRightHover.color">
+                        <stop offset="0" stop-color="#dddddd"/>
+                        <stop offset="1" stop-color="#dddddd"/>
+                    </linearGradient>
+                </defs>
+                <polygon fill="#ECECEC" fill-rule="evenodd" points="8.5 5.5 13 10.5 4 10.5"
                          transform="matrix(0 -1 -1 0 16.5 16.5)"/>
             </svg>
         </td>
@@ -5279,12 +5331,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="padding:0px" align="center"><img src="img/DarkMenuBarBorder.png" alt="MenuBar.border"></td>
     </tr>
     <tr>
-        <td>MenuBar.highlight</td>
-        <td>#F2F2F2 [242,242,242]</td>
-        <td>%background</td>
-        <td style="background-color: #F2F2F2" width="150" height="25">
-    </tr>
-    <tr>
         <td>MenuBar.background</td>
         <td>#F2F2F2 [242,242,242]</td>
         <td>%background</td>
@@ -5292,6 +5338,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </tr>
     <tr>
         <td>MenuBar.disabledBackground</td>
+        <td>#F2F2F2 [242,242,242]</td>
+        <td>%background</td>
+        <td style="background-color: #F2F2F2" width="150" height="25">
+    </tr>
+    <tr>
+        <td>MenuBar.highlight</td>
         <td>#F2F2F2 [242,242,242]</td>
         <td>%background</td>
         <td style="background-color: #F2F2F2" width="150" height="25">
@@ -5633,6 +5685,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #F2F2F2" width="150" height="25">
     </tr>
     <tr>
+        <td>OptionPane.messageForeground</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%textForeground</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
         <td>OptionPane.questionDialog.titlePane.foreground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
@@ -5652,12 +5710,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </tr>
     <tr>
         <td>OptionPane.errorDialog.titlePane.foreground</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%textForeground</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>OptionPane.messageForeground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -5687,20 +5739,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>OptionPane.informationIcon</td>
+        <td>OptionPane.errorIcon</td>
         <td>Icon [32,32]</td>
         <td></td>
         <td align="center">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                 <defs id="colors">
-                    <linearGradient id="Icons.informationDialog.color">
-                        <stop offset="0" stop-color="#3592C4"/>
-                        <stop offset="1" stop-color="#3592C4"/>
+                    <linearGradient id="Icons.errorDialog.color">
+                        <stop offset="0" stop-color="#C75450"/>
+                        <stop offset="1" stop-color="#C75450"/>
                     </linearGradient>
                 </defs>
-                <path fill="#389FD6" fill-rule="evenodd"
-                      d="M16,30 C8.2680135,30 2,23.7319865 2,16 C2,8.2680135 8.2680135,2 16,2 C23.7319865,2 30,8.2680135 30,16 C30,23.7319865 23.7319865,30 16,30 Z M14,7 L14,18 L18,18 L18,7 L14,7 Z M14,21 L14,25 L18,25 L18,21 L14,21 Z"
-                      transform="rotate(180 16 16)"/>
+                <path fill="#DB5860" fill-rule="evenodd"
+                      d="M16,30 C8.2680135,30 2,23.7319865 2,16 C2,8.2680135 8.2680135,2 16,2 C23.7319865,2 30,8.2680135 30,16 C30,23.7319865 23.7319865,30 16,30 Z M14,7 L14,18 L18,18 L18,7 L14,7 Z M14,21 L14,25 L18,25 L18,21 L14,21 Z"/>
             </svg>
         </td>
     </tr>
@@ -5722,6 +5773,24 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
+        <td>OptionPane.informationIcon</td>
+        <td>Icon [32,32]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <defs id="colors">
+                    <linearGradient id="Icons.informationDialog.color">
+                        <stop offset="0" stop-color="#3592C4"/>
+                        <stop offset="1" stop-color="#3592C4"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#389FD6" fill-rule="evenodd"
+                      d="M16,30 C8.2680135,30 2,23.7319865 2,16 C2,8.2680135 8.2680135,2 16,2 C23.7319865,2 30,8.2680135 30,16 C30,23.7319865 23.7319865,30 16,30 Z M14,7 L14,18 L18,18 L18,7 L14,7 Z M14,21 L14,25 L18,25 L18,21 L14,21 Z"
+                      transform="rotate(180 16 16)"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
         <td>OptionPane.warningIcon</td>
         <td>Icon [32,32]</td>
         <td></td>
@@ -5735,23 +5804,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 </defs>
                 <path fill="#E2A53A" fill-rule="evenodd"
                       d="M16,2 L31,28 L1,28 L16,2 Z M18,25 L18,21 L14,21 L14,25 L18,25 Z M18,18 L18,10 L14,10 L14,18 L18,18 Z"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>OptionPane.errorIcon</td>
-        <td>Icon [32,32]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                <defs id="colors">
-                    <linearGradient id="Icons.errorDialog.color">
-                        <stop offset="0" stop-color="#C75450"/>
-                        <stop offset="1" stop-color="#C75450"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#DB5860" fill-rule="evenodd"
-                      d="M16,30 C8.2680135,30 2,23.7319865 2,16 C2,8.2680135 8.2680135,2 16,2 C23.7319865,2 30,8.2680135 30,16 C30,23.7319865 23.7319865,30 16,30 Z M14,7 L14,18 L18,18 L18,7 L14,7 Z M14,21 L14,25 L18,25 L18,21 L14,21 Z"/>
             </svg>
         </td>
     </tr>
@@ -5860,13 +5912,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>PasswordField.inactiveBackground</td>
+        <td>PasswordField.disabledBackground</td>
         <td>#F2F2F2 [242,242,242]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #F2F2F2" width="150" height="25">
     </tr>
     <tr>
-        <td>PasswordField.disabledBackground</td>
+        <td>PasswordField.inactiveBackground</td>
         <td>#F2F2F2 [242,242,242]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #F2F2F2" width="150" height="25">
@@ -5896,23 +5948,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #777777" width="150" height="25">
     </tr>
     <tr>
-        <td>PasswordField.show.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.eye.color">
-                        <stop offset="0" stop-color="#AFB1B3"/>
-                        <stop offset="1" stop-color="#AFB1B3"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#6E6E6E"
-                      d="M8,3 C4.81818182,3 2.10090909,5.07333333 1,8 C2.10090909,10.9266667 4.81818182,13 8,13 C11.1818182,13 13.8990909,10.9266667 15,8 C13.8990909,5.07333333 11.1818182,3 8,3 Z M8,11.5 C6.068,11.5 4.5,9.932 4.5,8 C4.5,6.068 6.068,4.5 8,4.5 C9.932,4.5 11.5,6.068 11.5,8 C11.5,9.932 9.932,11.5 8,11.5 Z M8,6 C6.89333333,6 6,6.89333333 6,8 C6,9.10666667 6.89333333,10 8,10 C9.10666667,10 10,9.10666667 10,8 C10,6.89333333 9.10666667,6 8,6 Z"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
         <td>PasswordField.showPressed.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
@@ -5925,6 +5960,23 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                     </linearGradient>
                 </defs>
                 <path fill="#AFB1B3"
+                      d="M8,3 C4.81818182,3 2.10090909,5.07333333 1,8 C2.10090909,10.9266667 4.81818182,13 8,13 C11.1818182,13 13.8990909,10.9266667 15,8 C13.8990909,5.07333333 11.1818182,3 8,3 Z M8,11.5 C6.068,11.5 4.5,9.932 4.5,8 C4.5,6.068 6.068,4.5 8,4.5 C9.932,4.5 11.5,6.068 11.5,8 C11.5,9.932 9.932,11.5 8,11.5 Z M8,6 C6.89333333,6 6,6.89333333 6,8 C6,9.10666667 6.89333333,10 8,10 C9.10666667,10 10,9.10666667 10,8 C10,6.89333333 9.10666667,6 8,6 Z"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>PasswordField.show.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.eye.color">
+                        <stop offset="0" stop-color="#AFB1B3"/>
+                        <stop offset="1" stop-color="#AFB1B3"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#6E6E6E"
                       d="M8,3 C4.81818182,3 2.10090909,5.07333333 1,8 C2.10090909,10.9266667 4.81818182,13 8,13 C11.1818182,13 13.8990909,10.9266667 15,8 C13.8990909,5.07333333 11.1818182,3 8,3 Z M8,11.5 C6.068,11.5 4.5,9.932 4.5,8 C4.5,6.068 6.068,4.5 8,4.5 C9.932,4.5 11.5,6.068 11.5,8 C11.5,9.932 9.932,11.5 8,11.5 Z M8,6 C6.89333333,6 6,6.89333333 6,8 C6,9.10666667 6.89333333,10 8,10 C9.10666667,10 10,9.10666667 10,8 C10,6.89333333 9.10666667,6 8,6 Z"/>
             </svg>
         </td>
@@ -6358,101 +6410,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="padding:0px" align="center"><img src="img/RadioButton.icon.png" alt="RadioButton.icon"></td>
     </tr>
     <tr>
-        <td>RadioButton.uncheckedFocused.icon</td>
-        <td>Icon [19,19]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
-                <defs id="colors">
-                    <linearGradient id="Icons.RadioButtonFocused.activeFillColor">
-                        <stop offset="0" stop-color="#43494A"/>
-                        <stop offset="1" stop-color="#43494A"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.RadioButtonFocused.focusBorderColor">
-                        <stop offset="0" stop-color="#466D94"/>
-                        <stop offset="1" stop-color="#466D94"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.RadioButtonFocused.glowFocus" opacity="Icons.RadioButtonFocused.glowOpacity">
-                        <stop offset="0" stop-color="#3e84c9" stop-opacity="0.5"/>
-                        <stop offset="1" stop-color="#3e84c9" stop-opacity="0.5"/>
-                    </linearGradient>
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                    <circle cx="9.5" cy="9.5" r="7" fill="#FFFFFF"/>
-                    <path fill="#3D94F2"
-                          d="M9.5,19 C4.25329488,19 0,14.7467051 0,9.5 C0,4.25329488 4.25329488,0 9.5,0 C14.7467051,0 19,4.25329488 19,9.5 C19,14.7467051 14.7467051,19 9.5,19 Z M9.5,16 C13.0898509,16 16,13.0898509 16,9.5 C16,5.91014913 13.0898509,3 9.5,3 C5.91014913,3 3,5.91014913 3,9.5 C3,13.0898509 5.91014913,16 9.5,16 Z"/>
-                    <path fill="#7B9FC7"
-                          d="M9.5,17 C5.35786438,17 2,13.6421356 2,9.5 C2,5.35786438 5.35786438,2 9.5,2 C13.6421356,2 17,5.35786438 17,9.5 C17,13.6421356 13.6421356,17 9.5,17 Z M9.5,16 C13.0898509,16 16,13.0898509 16,9.5 C16,5.91014913 13.0898509,3 9.5,3 C5.91014913,3 3,5.91014913 3,9.5 C3,13.0898509 5.91014913,16 9.5,16 Z"/>
-                </g>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>RadioButton.selectedFocused.icon</td>
-        <td>Icon [19,19]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
-                <defs id="colors">
-                    <linearGradient id="Icons.RadioButtonSelectedFocused.selectedFillColor">
-                        <stop offset="0" stop-color="#43494A"/>
-                        <stop offset="1" stop-color="#43494A"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.RadioButtonSelectedFocused.focusSelectedBorderColor">
-                        <stop offset="0" stop-color="#466D94"/>
-                        <stop offset="1" stop-color="#466D94"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.RadioButtonSelectedFocused.selectionFocusSelectedColor">
-                        <stop offset="0" stop-color="#A7A7A7"/>
-                        <stop offset="1" stop-color="#A7A7A7"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.RadioButtonSelectedFocused.glowFocus"
-                                    opacity="Icons.RadioButtonSelectedFocused.glowOpacity">
-                        <stop offset="0" stop-color="#3e84c9" stop-opacity="0.5"/>
-                        <stop offset="1" stop-color="#3e84c9" stop-opacity="0.5"/>
-                    </linearGradient>
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                    <circle cx="9.5" cy="9.5" r="7" fill="#4D89C9"/>
-                    <path fill="#3D94F2"
-                          d="M9.5,19 C4.25329488,19 0,14.7467051 0,9.5 C0,4.25329488 4.25329488,0 9.5,0 C14.7467051,0 19,4.25329488 19,9.5 C19,14.7467051 14.7467051,19 9.5,19 Z M9.5,16 C13.0898509,16 16,13.0898509 16,9.5 C16,5.91014913 13.0898509,3 9.5,3 C5.91014913,3 3,5.91014913 3,9.5 C3,13.0898509 5.91014913,16 9.5,16 Z"/>
-                    <path fill="#ACCFF7"
-                          d="M9.5,17 C5.35786438,17 2,13.6421356 2,9.5 C2,5.35786438 5.35786438,2 9.5,2 C13.6421356,2 17,5.35786438 17,9.5 C17,13.6421356 13.6421356,17 9.5,17 Z M9.5,16 C13.0898509,16 16,13.0898509 16,9.5 C16,5.91014913 13.0898509,3 9.5,3 C5.91014913,3 3,5.91014913 3,9.5 C3,13.0898509 5.91014913,16 9.5,16 Z"/>
-                    <circle cx="9.5" cy="9.5" r="2.5" fill="#FFFFFF"/>
-                </g>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>RadioButton.selected.icon</td>
-        <td>Icon [19,19]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
-                <defs id="colors">
-                    <linearGradient id="Icons.RadioButtonSelected.selectedFillColor">
-                        <stop offset="0" stop-color="#43494A"/>
-                        <stop offset="1" stop-color="#43494A"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.RadioButtonSelected.selectedBorderColor">
-                        <stop offset="0" stop-color="#6B6B6B"/>
-                        <stop offset="1" stop-color="#6B6B6B"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.RadioButtonSelected.selectionSelectedColor">
-                        <stop offset="0" stop-color="#A7A7A7"/>
-                        <stop offset="1" stop-color="#A7A7A7"/>
-                    </linearGradient>
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                    <circle cx="9.5" cy="9.5" r="7" fill="#4D89C9"/>
-                    <path fill="#4982CC"
-                          d="M9.5,17 C5.35786438,17 2,13.6421356 2,9.5 C2,5.35786438 5.35786438,2 9.5,2 C13.6421356,2 17,5.35786438 17,9.5 C17,13.6421356 13.6421356,17 9.5,17 Z M9.5,16 C13.0898509,16 16,13.0898509 16,9.5 C16,5.91014913 13.0898509,3 9.5,3 C5.91014913,3 3,5.91014913 3,9.5 C3,13.0898509 5.91014913,16 9.5,16 Z"/>
-                    <circle cx="9.5" cy="9.5" r="2.5" fill="#FFFFFF"/>
-                </g>
-            </svg>
-        </td>
-    </tr>
-    <tr>
         <td>RadioButton.unchecked.icon</td>
         <td>Icon [19,19]</td>
         <td></td>
@@ -6525,6 +6482,101 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                     <path fill="#BDBDBD"
                           d="M9.5,17 C5.35786438,17 2,13.6421356 2,9.5 C2,5.35786438 5.35786438,2 9.5,2 C13.6421356,2 17,5.35786438 17,9.5 C17,13.6421356 13.6421356,17 9.5,17 Z M9.5,16 C13.0898509,16 16,13.0898509 16,9.5 C16,5.91014913 13.0898509,3 9.5,3 C5.91014913,3 3,5.91014913 3,9.5 C3,13.0898509 5.91014913,16 9.5,16 Z"/>
                     <circle cx="9.5" cy="9.5" r="2.5" fill="#ABABAB"/>
+                </g>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>RadioButton.selected.icon</td>
+        <td>Icon [19,19]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+                <defs id="colors">
+                    <linearGradient id="Icons.RadioButtonSelected.selectedFillColor">
+                        <stop offset="0" stop-color="#43494A"/>
+                        <stop offset="1" stop-color="#43494A"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.RadioButtonSelected.selectedBorderColor">
+                        <stop offset="0" stop-color="#6B6B6B"/>
+                        <stop offset="1" stop-color="#6B6B6B"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.RadioButtonSelected.selectionSelectedColor">
+                        <stop offset="0" stop-color="#A7A7A7"/>
+                        <stop offset="1" stop-color="#A7A7A7"/>
+                    </linearGradient>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <circle cx="9.5" cy="9.5" r="7" fill="#4D89C9"/>
+                    <path fill="#4982CC"
+                          d="M9.5,17 C5.35786438,17 2,13.6421356 2,9.5 C2,5.35786438 5.35786438,2 9.5,2 C13.6421356,2 17,5.35786438 17,9.5 C17,13.6421356 13.6421356,17 9.5,17 Z M9.5,16 C13.0898509,16 16,13.0898509 16,9.5 C16,5.91014913 13.0898509,3 9.5,3 C5.91014913,3 3,5.91014913 3,9.5 C3,13.0898509 5.91014913,16 9.5,16 Z"/>
+                    <circle cx="9.5" cy="9.5" r="2.5" fill="#FFFFFF"/>
+                </g>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>RadioButton.uncheckedFocused.icon</td>
+        <td>Icon [19,19]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+                <defs id="colors">
+                    <linearGradient id="Icons.RadioButtonFocused.activeFillColor">
+                        <stop offset="0" stop-color="#43494A"/>
+                        <stop offset="1" stop-color="#43494A"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.RadioButtonFocused.focusBorderColor">
+                        <stop offset="0" stop-color="#466D94"/>
+                        <stop offset="1" stop-color="#466D94"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.RadioButtonFocused.glowFocus" opacity="Icons.RadioButtonFocused.glowOpacity">
+                        <stop offset="0" stop-color="#3e84c9" stop-opacity="0.5"/>
+                        <stop offset="1" stop-color="#3e84c9" stop-opacity="0.5"/>
+                    </linearGradient>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <circle cx="9.5" cy="9.5" r="7" fill="#FFFFFF"/>
+                    <path fill="#3D94F2"
+                          d="M9.5,19 C4.25329488,19 0,14.7467051 0,9.5 C0,4.25329488 4.25329488,0 9.5,0 C14.7467051,0 19,4.25329488 19,9.5 C19,14.7467051 14.7467051,19 9.5,19 Z M9.5,16 C13.0898509,16 16,13.0898509 16,9.5 C16,5.91014913 13.0898509,3 9.5,3 C5.91014913,3 3,5.91014913 3,9.5 C3,13.0898509 5.91014913,16 9.5,16 Z"/>
+                    <path fill="#7B9FC7"
+                          d="M9.5,17 C5.35786438,17 2,13.6421356 2,9.5 C2,5.35786438 5.35786438,2 9.5,2 C13.6421356,2 17,5.35786438 17,9.5 C17,13.6421356 13.6421356,17 9.5,17 Z M9.5,16 C13.0898509,16 16,13.0898509 16,9.5 C16,5.91014913 13.0898509,3 9.5,3 C5.91014913,3 3,5.91014913 3,9.5 C3,13.0898509 5.91014913,16 9.5,16 Z"/>
+                </g>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>RadioButton.selectedFocused.icon</td>
+        <td>Icon [19,19]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+                <defs id="colors">
+                    <linearGradient id="Icons.RadioButtonSelectedFocused.selectedFillColor">
+                        <stop offset="0" stop-color="#43494A"/>
+                        <stop offset="1" stop-color="#43494A"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.RadioButtonSelectedFocused.focusSelectedBorderColor">
+                        <stop offset="0" stop-color="#466D94"/>
+                        <stop offset="1" stop-color="#466D94"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.RadioButtonSelectedFocused.selectionFocusSelectedColor">
+                        <stop offset="0" stop-color="#A7A7A7"/>
+                        <stop offset="1" stop-color="#A7A7A7"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.RadioButtonSelectedFocused.glowFocus"
+                                    opacity="Icons.RadioButtonSelectedFocused.glowOpacity">
+                        <stop offset="0" stop-color="#3e84c9" stop-opacity="0.5"/>
+                        <stop offset="1" stop-color="#3e84c9" stop-opacity="0.5"/>
+                    </linearGradient>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <circle cx="9.5" cy="9.5" r="7" fill="#4D89C9"/>
+                    <path fill="#3D94F2"
+                          d="M9.5,19 C4.25329488,19 0,14.7467051 0,9.5 C0,4.25329488 4.25329488,0 9.5,0 C14.7467051,0 19,4.25329488 19,9.5 C19,14.7467051 14.7467051,19 9.5,19 Z M9.5,16 C13.0898509,16 16,13.0898509 16,9.5 C16,5.91014913 13.0898509,3 9.5,3 C5.91014913,3 3,5.91014913 3,9.5 C3,13.0898509 5.91014913,16 9.5,16 Z"/>
+                    <path fill="#ACCFF7"
+                          d="M9.5,17 C5.35786438,17 2,13.6421356 2,9.5 C2,5.35786438 5.35786438,2 9.5,2 C13.6421356,2 17,5.35786438 17,9.5 C17,13.6421356 13.6421356,17 9.5,17 Z M9.5,16 C13.0898509,16 16,13.0898509 16,9.5 C16,5.91014913 13.0898509,3 9.5,3 C5.91014913,3 3,5.91014913 3,9.5 C3,13.0898509 5.91014913,16 9.5,16 Z"/>
+                    <circle cx="9.5" cy="9.5" r="2.5" fill="#FFFFFF"/>
                 </g>
             </svg>
         </td>
@@ -6718,10 +6770,10 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>RootPane.colorChooserDialogBorder</td>
+        <td>RootPane.frameBorder</td>
         <td>DarkRootPaneBorder</td>
         <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.colorChooserDialogBorder"></td>
+        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.frameBorder"></td>
     </tr>
     <tr>
         <td>RootPane.errorDialogBorder</td>
@@ -6730,10 +6782,34 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.errorDialogBorder"></td>
     </tr>
     <tr>
+        <td>RootPane.informationDialogBorder</td>
+        <td>DarkRootPaneBorder</td>
+        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.informationDialogBorder"></td>
+    </tr>
+    <tr>
+        <td>RootPane.fileChooserDialogBorder</td>
+        <td>DarkRootPaneBorder</td>
+        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.fileChooserDialogBorder"></td>
+    </tr>
+    <tr>
+        <td>RootPane.colorChooserDialogBorder</td>
+        <td>DarkRootPaneBorder</td>
+        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.colorChooserDialogBorder"></td>
+    </tr>
+    <tr>
         <td>RootPane.border</td>
         <td>PlainRootPaneBorder</td>
         <td></td>
         <td></td>
+    </tr>
+    <tr>
+        <td>RootPane.plainDialogBorder</td>
+        <td>DarkRootPaneBorder</td>
+        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.plainDialogBorder"></td>
     </tr>
     <tr>
         <td>RootPane.questionDialogBorder</td>
@@ -6746,30 +6822,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td>DarkRootPaneBorder</td>
         <td></td>
         <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.warningDialogBorder"></td>
-    </tr>
-    <tr>
-        <td>RootPane.plainDialogBorder</td>
-        <td>DarkRootPaneBorder</td>
-        <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.plainDialogBorder"></td>
-    </tr>
-    <tr>
-        <td>RootPane.fileChooserDialogBorder</td>
-        <td>DarkRootPaneBorder</td>
-        <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.fileChooserDialogBorder"></td>
-    </tr>
-    <tr>
-        <td>RootPane.informationDialogBorder</td>
-        <td>DarkRootPaneBorder</td>
-        <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.informationDialogBorder"></td>
-    </tr>
-    <tr>
-        <td>RootPane.frameBorder</td>
-        <td>DarkRootPaneBorder</td>
-        <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkRootPaneBorder.png" alt="RootPane.frameBorder"></td>
     </tr>
     <tr>
         <td>RootPane.background</td>
@@ -6836,13 +6888,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>ScrollBar.ancestorInputMap</td>
+        <td>ScrollBar.ancestorInputMap.RightToLeft</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>ScrollBar.ancestorInputMap.RightToLeft</td>
+        <td>ScrollBar.ancestorInputMap</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
@@ -6918,13 +6970,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>ScrollPane.ancestorInputMap</td>
+        <td>ScrollPane.ancestorInputMap.RightToLeft</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>ScrollPane.ancestorInputMap.RightToLeft</td>
+        <td>ScrollPane.ancestorInputMap</td>
         <td>InputMapUIResource</td>
         <td></td>
         <td></td>
@@ -7148,12 +7200,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #7B9FC7" width="150" height="25">
     </tr>
     <tr>
-        <td>Slider.disabledTrackColor</td>
-        <td>#ABABAB [171,171,171]</td>
-        <td>%controlFillDisabled</td>
-        <td style="background-color: #ABABAB" width="150" height="25">
-    </tr>
-    <tr>
         <td>Slider.inactiveThumbFill</td>
         <td>#ABABAB [171,171,171]</td>
         <td>%controlFillDisabled</td>
@@ -7161,6 +7207,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </tr>
     <tr>
         <td>Slider.volume.inactiveThumbFill</td>
+        <td>#ABABAB [171,171,171]</td>
+        <td>%controlFillDisabled</td>
+        <td style="background-color: #ABABAB" width="150" height="25">
+    </tr>
+    <tr>
+        <td>Slider.disabledTrackColor</td>
         <td>#ABABAB [171,171,171]</td>
         <td>%controlFillDisabled</td>
         <td style="background-color: #ABABAB" width="150" height="25">
@@ -7178,13 +7230,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #ABABAB" width="150" height="25">
     </tr>
     <tr>
-        <td>Slider.selectedTrackColor</td>
+        <td>Slider.volume.activeThumbFill</td>
         <td>#808080 [128,128,128]</td>
         <td>%controlFillSecondary</td>
         <td style="background-color: #808080" width="150" height="25">
     </tr>
     <tr>
-        <td>Slider.volume.activeThumbFill</td>
+        <td>Slider.selectedTrackColor</td>
         <td>#808080 [128,128,128]</td>
         <td>%controlFillSecondary</td>
         <td style="background-color: #808080" width="150" height="25">
@@ -7214,65 +7266,17 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>Slider.volume.enabled_level_2.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 500 500">
-                <defs id="colors">
-                    <linearGradient id="Icons.speaker2.color">
-                        <stop offset="0" stop-color="#AFB1B3"/>
-                        <stop offset="1" stop-color="#AFB1B3"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.speaker2.volumeColor">
-                        <stop offset="0" stop-color="#AFB1B3"/>
-                        <stop offset="1" stop-color="#AFB1B3"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#6E6E6E" stroke="#6E6E6E" stroke-width="15"
-                      stroke-linejoin="round"
-                      d="M262.6,91.8l-114.4,98.9H40V318h106.6l116,100.3V91.8z"/>
-                <path fill="none" stroke="#6E6E6E" stroke-width="25" stroke-linecap="round"
-                      d="M320,184c28.4,43.3,28.4,99.4,0,142.7"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>Slider.disabledThumb.icon</td>
-        <td>Icon [20,23]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 22">
-                <defs id="colors">
-                    <linearGradient id="Icons.SliderDisabled.inactiveFillColor">
-                        <stop offset="0" stop-color="#3C3F41"/>
-                        <stop offset="1" stop-color="#3C3F41"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.SliderDisabled.inactiveBorderColor">
-                        <stop offset="0" stop-color="#545556"/>
-                        <stop offset="1" stop-color="#545556"/>
-                    </linearGradient>
-                </defs>
-                <g transform="translate(2,1)">
-                    <path fill="#BDBDBD"
-                          d="M15,1v9.6l-7,7l-7-7V1H15 M16,0H0v11l8,8l8-8V0L16,0z"/>
-                    <polyline fill="#ABABAB" points="15,1 15,10.6 8,17.6 1,10.6 1,1 15,1 "/>
-                </g>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>Slider.volume.enabledThumb.icon</td>
+        <td>Slider.enabledThumb.icon</td>
         <td>Icon [20,23]</td>
         <td></td>
         <td align="center">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
                 <defs id="colors">
-                    <linearGradient id="Icons.VolumeSlider.activeFillColor">
-                        <stop offset="0" stop-color="#A0A0A0"/>
-                        <stop offset="1" stop-color="#A0A0A0"/>
+                    <linearGradient id="Icons.Slider.activeFillColor">
+                        <stop offset="0" stop-color="#43494A"/>
+                        <stop offset="1" stop-color="#43494A"/>
                     </linearGradient>
-                    <linearGradient id="Icons.VolumeSlider.borderColor">
+                    <linearGradient id="Icons.Slider.borderColor">
                         <stop offset="0" stop-color="#6B6B6B"/>
                         <stop offset="1" stop-color="#6B6B6B"/>
                     </linearGradient>
@@ -7280,61 +7284,8 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 <g transform="translate(2,2)">
                     <path fill="#878787"
                           d="M15,1v9.6l-7,7l-7-7V1H15 M16,0H0v11l8,8l8-8V0L16,0z"/>
-                    <polyline fill="#808080" points="15,1 15,10.6 8,17.6 1,10.6 1,1 15,1 "/>
+                    <polyline fill="#FFFFFF" points="15,1 15,10.6 8,17.6 1,10.6 1,1 15,1 "/>
                 </g>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>Slider.volume.disabledThumb.icon</td>
-        <td>Icon [20,23]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-                <defs id="colors">
-                    <linearGradient id="Icons.VolumeSliderDisabled.inactiveFillColor">
-                        <stop offset="0" stop-color="#3C3F41"/>
-                        <stop offset="1" stop-color="#3C3F41"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.VolumeSliderDisabled.inactiveBorderColor">
-                        <stop offset="0" stop-color="#545556"/>
-                        <stop offset="1" stop-color="#545556"/>
-                    </linearGradient>
-                </defs>
-                <g transform="translate(2,2)">
-                    <path fill="#BDBDBD"
-                          d="M15,1v9.6l-7,7l-7-7V1H15 M16,0H0v11l8,8l8-8V0L16,0z"/>
-                    <polyline fill="#ABABAB"
-                              points="15,1 15,10.6 8,17.6 1,10.6 1,1 15,1 "/>
-                </g>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>Slider.volume.disabled_level_4.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 500 500">
-                <defs id="colors">
-                    <linearGradient id="Icons.speaker4Disabled.color">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.speaker4Disabled.volumeColor">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#AFB1B3" stroke="#AFB1B3" stroke-width="15"
-                      stroke-linejoin="round"
-                      d="M262.6,91.8l-114.4,98.9H40V318h106.6l116,100.3V91.8z"/>
-                <path fill="none" stroke="#AFB1B3" stroke-width="25" stroke-linecap="round"
-                      d="M320,184c28.4,43.3,28.4,99.4,0,142.7"/>
-                <path fill="none" stroke="#AFB1B3" stroke-width="25" stroke-linecap="round"
-                      d="M367.3,136.7c52,70.6,52,166.8,0,237.3"/>
-                <path fill="none" stroke="#AFB1B3" stroke-width="25" stroke-linecap="round"
-                      d="M410.7,93.3c76,94.6,76,229.4,0,324"/>
             </svg>
         </td>
     </tr>
@@ -7357,33 +7308,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 <path fill="#AFB1B3" stroke="#AFB1B3" stroke-width="15"
                       stroke-linejoin="round"
                       d="M262.6,91.8l-114.4,98.9H40V318h106.6l116,100.3V91.8z"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>Slider.volume.disabled_level_0.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 500 500">
-                <defs id="colors">
-                    <linearGradient id="Icons.speaker0Disabled.color">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.speaker0Disabled.crossColor">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#AFB1B3" stroke="#AFB1B3" stroke-width="15"
-                      stroke-linejoin="round"
-                      d="M262.6,91.8l-114.4,98.9H40V318h106.6l116,100.3V91.8z"/>
-                <line fill="none" stroke="#AFB1B3" stroke-width="25" stroke-linecap="round"
-                      x1="302" y1="332.5" x2="466.9" y2="167.5"/>
-                <line fill="none" stroke="#AFB1B3" stroke-width="25" stroke-linecap="round" x1="302"
-                      y1="167.5"
-                      x2="466.9" y2="332.5"/>
             </svg>
         </td>
     </tr>
@@ -7415,17 +7339,17 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>Slider.volume.enabled_level_1.icon</td>
+        <td>Slider.volume.enabled_level_2.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
         <td align="center">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 500 500">
                 <defs id="colors">
-                    <linearGradient id="Icons.speaker1.color">
+                    <linearGradient id="Icons.speaker2.color">
                         <stop offset="0" stop-color="#AFB1B3"/>
                         <stop offset="1" stop-color="#AFB1B3"/>
                     </linearGradient>
-                    <linearGradient id="Icons.speaker1.volumeColor">
+                    <linearGradient id="Icons.speaker2.volumeColor">
                         <stop offset="0" stop-color="#AFB1B3"/>
                         <stop offset="1" stop-color="#AFB1B3"/>
                     </linearGradient>
@@ -7433,30 +7357,35 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 <path fill="#6E6E6E" stroke="#6E6E6E" stroke-width="15"
                       stroke-linejoin="round"
                       d="M262.6,91.8l-114.4,98.9H40V318h106.6l116,100.3V91.8z"/>
+                <path fill="none" stroke="#6E6E6E" stroke-width="25" stroke-linecap="round"
+                      d="M320,184c28.4,43.3,28.4,99.4,0,142.7"/>
             </svg>
         </td>
     </tr>
     <tr>
-        <td>Slider.enabledThumb.icon</td>
-        <td>Icon [20,23]</td>
+        <td>Slider.volume.disabled_level_0.icon</td>
+        <td>Icon [16,16]</td>
         <td></td>
         <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 500 500">
                 <defs id="colors">
-                    <linearGradient id="Icons.Slider.activeFillColor">
-                        <stop offset="0" stop-color="#43494A"/>
-                        <stop offset="1" stop-color="#43494A"/>
+                    <linearGradient id="Icons.speaker0Disabled.color">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
                     </linearGradient>
-                    <linearGradient id="Icons.Slider.borderColor">
-                        <stop offset="0" stop-color="#6B6B6B"/>
-                        <stop offset="1" stop-color="#6B6B6B"/>
+                    <linearGradient id="Icons.speaker0Disabled.crossColor">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
                     </linearGradient>
                 </defs>
-                <g transform="translate(2,2)">
-                    <path fill="#878787"
-                          d="M15,1v9.6l-7,7l-7-7V1H15 M16,0H0v11l8,8l8-8V0L16,0z"/>
-                    <polyline fill="#FFFFFF" points="15,1 15,10.6 8,17.6 1,10.6 1,1 15,1 "/>
-                </g>
+                <path fill="#AFB1B3" stroke="#AFB1B3" stroke-width="15"
+                      stroke-linejoin="round"
+                      d="M262.6,91.8l-114.4,98.9H40V318h106.6l116,100.3V91.8z"/>
+                <line fill="none" stroke="#AFB1B3" stroke-width="25" stroke-linecap="round"
+                      x1="302" y1="332.5" x2="466.9" y2="167.5"/>
+                <line fill="none" stroke="#AFB1B3" stroke-width="25" stroke-linecap="round" x1="302"
+                      y1="167.5"
+                      x2="466.9" y2="332.5"/>
             </svg>
         </td>
     </tr>
@@ -7487,6 +7416,138 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                           d="M15,1v9.6l-7,7l-7-7V1H15 M16,0H0v11l8,8l8-8V0L16,0z"/>
                     <polyline fill="#808080" points="15,1 15,10.6 8,17.6 1,10.6 1,1 15,1 "/>
                 </g>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>Slider.disabledThumb.icon</td>
+        <td>Icon [20,23]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 22">
+                <defs id="colors">
+                    <linearGradient id="Icons.SliderDisabled.inactiveFillColor">
+                        <stop offset="0" stop-color="#3C3F41"/>
+                        <stop offset="1" stop-color="#3C3F41"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.SliderDisabled.inactiveBorderColor">
+                        <stop offset="0" stop-color="#545556"/>
+                        <stop offset="1" stop-color="#545556"/>
+                    </linearGradient>
+                </defs>
+                <g transform="translate(2,1)">
+                    <path fill="#BDBDBD"
+                          d="M15,1v9.6l-7,7l-7-7V1H15 M16,0H0v11l8,8l8-8V0L16,0z"/>
+                    <polyline fill="#ABABAB" points="15,1 15,10.6 8,17.6 1,10.6 1,1 15,1 "/>
+                </g>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>Slider.volume.enabled_level_3.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 500 500">
+                <defs id="colors">
+                    <linearGradient id="Icons.speaker3.color">
+                        <stop offset="0" stop-color="#AFB1B3"/>
+                        <stop offset="1" stop-color="#AFB1B3"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.speaker3.volumeColor">
+                        <stop offset="0" stop-color="#AFB1B3"/>
+                        <stop offset="1" stop-color="#AFB1B3"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#6E6E6E" stroke="#6E6E6E" stroke-width="15"
+                      stroke-linejoin="round"
+                      d="M262.6,91.8l-114.4,98.9H40V318h106.6l116,100.3V91.8z"/>
+                <path fill="none" stroke="#6E6E6E" stroke-width="25" stroke-linecap="round"
+                      d="M320,184c28.4,43.3,28.4,99.4,0,142.7"/>
+                <path fill="none" stroke="#6E6E6E" stroke-width="25" stroke-linecap="round"
+                      d="M367.3,136.7c52,70.6,52,166.8,0,237.3"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>Slider.volume.enabledThumb.icon</td>
+        <td>Icon [20,23]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                <defs id="colors">
+                    <linearGradient id="Icons.VolumeSlider.activeFillColor">
+                        <stop offset="0" stop-color="#A0A0A0"/>
+                        <stop offset="1" stop-color="#A0A0A0"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.VolumeSlider.borderColor">
+                        <stop offset="0" stop-color="#6B6B6B"/>
+                        <stop offset="1" stop-color="#6B6B6B"/>
+                    </linearGradient>
+                </defs>
+                <g transform="translate(2,2)">
+                    <path fill="#878787"
+                          d="M15,1v9.6l-7,7l-7-7V1H15 M16,0H0v11l8,8l8-8V0L16,0z"/>
+                    <polyline fill="#808080" points="15,1 15,10.6 8,17.6 1,10.6 1,1 15,1 "/>
+                </g>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>Slider.focusedThumb.icon</td>
+        <td>Icon [20,23]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                <defs id="colors">
+                    <linearGradient id="Icons.SliderFocused.activeFillColor">
+                        <stop offset="0" stop-color="#43494A"/>
+                        <stop offset="1" stop-color="#43494A"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.SliderFocused.focusBorderColor">
+                        <stop offset="0" stop-color="#466D94"/>
+                        <stop offset="1" stop-color="#466D94"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.SliderFocused.glowFocus" opacity="Icons.SliderFocused.glowOpacity">
+                        <stop offset="0" stop-color="#3e84c9" stop-opacity="0.5"/>
+                        <stop offset="1" stop-color="#3e84c9" stop-opacity="0.5"/>
+                    </linearGradient>
+                </defs>
+                <g transform="translate(2,2)">
+                    <path fill="#3D94F2" d="M16,0C16,0,16,0,16,0l0,11l-8,8H8l-8-8V0c0,0,0,0,0,0H16 M16-2H0c-1.1,0-2,0.9-2,2V11c0,0.5,0.2,1.1,0.6,1.4
+            	      l8,8C7,20.8,7.5,21,8,21s1-0.2,1.4-0.6l8-8C17.8,12,18,11.5,18,11V0C18-1.1,17.1-2,16-2L16-2z"/>
+                    <path fill="#7B9FC7"
+                          d="M15,1v9.6l-7,7l-7-7V1H15 M16,0H0v11l8,8l8-8V0L16,0z"/>
+                    <polyline fill="#FFFFFF" points="15,1 15,10.6 8,17.6 1,10.6 1,1 15,1 "/>
+                </g>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>Slider.volume.disabled_level_4.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 500 500">
+                <defs id="colors">
+                    <linearGradient id="Icons.speaker4Disabled.color">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.speaker4Disabled.volumeColor">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#AFB1B3" stroke="#AFB1B3" stroke-width="15"
+                      stroke-linejoin="round"
+                      d="M262.6,91.8l-114.4,98.9H40V318h106.6l116,100.3V91.8z"/>
+                <path fill="none" stroke="#AFB1B3" stroke-width="25" stroke-linecap="round"
+                      d="M320,184c28.4,43.3,28.4,99.4,0,142.7"/>
+                <path fill="none" stroke="#AFB1B3" stroke-width="25" stroke-linecap="round"
+                      d="M367.3,136.7c52,70.6,52,166.8,0,237.3"/>
+                <path fill="none" stroke="#AFB1B3" stroke-width="25" stroke-linecap="round"
+                      d="M410.7,93.3c76,94.6,76,229.4,0,324"/>
             </svg>
         </td>
     </tr>
@@ -7543,17 +7604,42 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>Slider.volume.enabled_level_3.icon</td>
+        <td>Slider.volume.disabledThumb.icon</td>
+        <td>Icon [20,23]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                <defs id="colors">
+                    <linearGradient id="Icons.VolumeSliderDisabled.inactiveFillColor">
+                        <stop offset="0" stop-color="#3C3F41"/>
+                        <stop offset="1" stop-color="#3C3F41"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.VolumeSliderDisabled.inactiveBorderColor">
+                        <stop offset="0" stop-color="#545556"/>
+                        <stop offset="1" stop-color="#545556"/>
+                    </linearGradient>
+                </defs>
+                <g transform="translate(2,2)">
+                    <path fill="#BDBDBD"
+                          d="M15,1v9.6l-7,7l-7-7V1H15 M16,0H0v11l8,8l8-8V0L16,0z"/>
+                    <polyline fill="#ABABAB"
+                              points="15,1 15,10.6 8,17.6 1,10.6 1,1 15,1 "/>
+                </g>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>Slider.volume.enabled_level_1.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
         <td align="center">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 500 500">
                 <defs id="colors">
-                    <linearGradient id="Icons.speaker3.color">
+                    <linearGradient id="Icons.speaker1.color">
                         <stop offset="0" stop-color="#AFB1B3"/>
                         <stop offset="1" stop-color="#AFB1B3"/>
                     </linearGradient>
-                    <linearGradient id="Icons.speaker3.volumeColor">
+                    <linearGradient id="Icons.speaker1.volumeColor">
                         <stop offset="0" stop-color="#AFB1B3"/>
                         <stop offset="1" stop-color="#AFB1B3"/>
                     </linearGradient>
@@ -7561,40 +7647,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 <path fill="#6E6E6E" stroke="#6E6E6E" stroke-width="15"
                       stroke-linejoin="round"
                       d="M262.6,91.8l-114.4,98.9H40V318h106.6l116,100.3V91.8z"/>
-                <path fill="none" stroke="#6E6E6E" stroke-width="25" stroke-linecap="round"
-                      d="M320,184c28.4,43.3,28.4,99.4,0,142.7"/>
-                <path fill="none" stroke="#6E6E6E" stroke-width="25" stroke-linecap="round"
-                      d="M367.3,136.7c52,70.6,52,166.8,0,237.3"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>Slider.focusedThumb.icon</td>
-        <td>Icon [20,23]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-                <defs id="colors">
-                    <linearGradient id="Icons.SliderFocused.activeFillColor">
-                        <stop offset="0" stop-color="#43494A"/>
-                        <stop offset="1" stop-color="#43494A"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.SliderFocused.focusBorderColor">
-                        <stop offset="0" stop-color="#466D94"/>
-                        <stop offset="1" stop-color="#466D94"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.SliderFocused.glowFocus" opacity="Icons.SliderFocused.glowOpacity">
-                        <stop offset="0" stop-color="#3e84c9" stop-opacity="0.5"/>
-                        <stop offset="1" stop-color="#3e84c9" stop-opacity="0.5"/>
-                    </linearGradient>
-                </defs>
-                <g transform="translate(2,2)">
-                    <path fill="#3D94F2" d="M16,0C16,0,16,0,16,0l0,11l-8,8H8l-8-8V0c0,0,0,0,0,0H16 M16-2H0c-1.1,0-2,0.9-2,2V11c0,0.5,0.2,1.1,0.6,1.4
-            	      l8,8C7,20.8,7.5,21,8,21s1-0.2,1.4-0.6l8-8C17.8,12,18,11.5,18,11V0C18-1.1,17.1-2,16-2L16-2z"/>
-                    <path fill="#7B9FC7"
-                          d="M15,1v9.6l-7,7l-7-7V1H15 M16,0H0v11l8,8l8-8V0L16,0z"/>
-                    <polyline fill="#FFFFFF" points="15,1 15,10.6 8,17.6 1,10.6 1,1 15,1 "/>
-                </g>
             </svg>
         </td>
     </tr>
@@ -7778,38 +7830,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>Spinner.minus.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                <defs id="colors">
-                    <linearGradient id="Icons.minus.color">
-                        <stop offset="0" stop-color="#AFB1B3"/>
-                        <stop offset="1" stop-color="#AFB1B3"/>
-                    </linearGradient>
-                </defs>
-                <rect x="4.5" y="7" fill="#6E6E6E" width="7" height="2"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>Spinner.minusInactive.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                <defs id="colors">
-                    <linearGradient id="Icons.minus.color">
-                        <stop offset="0" stop-color="#AFB1B3"/>
-                        <stop offset="1" stop-color="#AFB1B3"/>
-                    </linearGradient>
-                </defs>
-                <rect x="4.5" y="7" fill="#6E6E6E" width="7" height="2"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
         <td>Spinner.arrowUp.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
@@ -7843,19 +7863,50 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>Spinner.plus.icon</td>
+        <td>Spinner.minusInactive.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
         <td align="center">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 16 16" width="16" height="16">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                 <defs id="colors">
-                    <linearGradient id="Icons.plus.color">
+                    <linearGradient id="Icons.minus.color">
                         <stop offset="0" stop-color="#AFB1B3"/>
                         <stop offset="1" stop-color="#AFB1B3"/>
                     </linearGradient>
                 </defs>
                 <rect x="4.5" y="7" fill="#6E6E6E" width="7" height="2"/>
-                <rect x="7" y="4.5" fill="#6E6E6E" width="2" height="7"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>Spinner.minus.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                <defs id="colors">
+                    <linearGradient id="Icons.minus.color">
+                        <stop offset="0" stop-color="#AFB1B3"/>
+                        <stop offset="1" stop-color="#AFB1B3"/>
+                    </linearGradient>
+                </defs>
+                <rect x="4.5" y="7" fill="#6E6E6E" width="7" height="2"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>Spinner.arrowUpInactive.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.arrowUpDisabled.color">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
+                    </linearGradient>
+                </defs>
+                <polygon fill="#AFB1B3" fill-rule="evenodd" points="8 5 12.5 10 3.5 10"/>
             </svg>
         </td>
     </tr>
@@ -7877,18 +7928,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>Spinner.arrowUpInactive.icon</td>
+        <td>Spinner.plus.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
         <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 16 16" width="16" height="16">
                 <defs id="colors">
-                    <linearGradient id="Icons.arrowUpDisabled.color">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
+                    <linearGradient id="Icons.plus.color">
+                        <stop offset="0" stop-color="#AFB1B3"/>
+                        <stop offset="1" stop-color="#AFB1B3"/>
                     </linearGradient>
                 </defs>
-                <polygon fill="#AFB1B3" fill-rule="evenodd" points="8 5 12.5 10 3.5 10"/>
+                <rect x="4.5" y="7" fill="#6E6E6E" width="7" height="2"/>
+                <rect x="7" y="4.5" fill="#6E6E6E" width="2" height="7"/>
             </svg>
         </td>
     </tr>
@@ -8015,6 +8067,39 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="padding:0px" align="center"><img src="img/DarkSplitPaneDividerBorder.png" alt="SplitPaneDivider.border"></td>
     </tr>
     <tr>
+        <td>SplitPaneDivider.topOneTouch.icon</td>
+        <td>Icon [13,13]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.arrowUp.color">
+                        <stop offset="0" stop-color="#AFB1B3"/>
+                        <stop offset="1" stop-color="#AFB1B3"/>
+                    </linearGradient>
+                </defs>
+                <polygon fill="#6E6E6E" fill-rule="evenodd" points="8 5 12.5 10 3.5 10"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>SplitPaneDivider.bottomOneTouch.icon</td>
+        <td>Icon [13,13]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.arrowDown.color">
+                        <stop offset="0" stop-color="#AFB1B3"/>
+                        <stop offset="1" stop-color="#AFB1B3"/>
+                    </linearGradient>
+                </defs>
+                <polygon fill="#6E6E6E" fill-rule="evenodd" points="8 6 12.5 11 3.5 11"
+                         transform="matrix(1 0 0 -1 0 17)"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
         <td>SplitPaneDivider.rightOneTouch.icon</td>
         <td>Icon [13,13]</td>
         <td></td>
@@ -8045,39 +8130,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 </defs>
                 <polygon fill="#6E6E6E" fill-rule="evenodd" points="7.5 5.5 12 10.5 3 10.5"
                          transform="rotate(-90 7.5 8)"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>SplitPaneDivider.bottomOneTouch.icon</td>
-        <td>Icon [13,13]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.arrowDown.color">
-                        <stop offset="0" stop-color="#AFB1B3"/>
-                        <stop offset="1" stop-color="#AFB1B3"/>
-                    </linearGradient>
-                </defs>
-                <polygon fill="#6E6E6E" fill-rule="evenodd" points="8 6 12.5 11 3.5 11"
-                         transform="matrix(1 0 0 -1 0 17)"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>SplitPaneDivider.topOneTouch.icon</td>
-        <td>Icon [13,13]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.arrowUp.color">
-                        <stop offset="0" stop-color="#AFB1B3"/>
-                        <stop offset="1" stop-color="#AFB1B3"/>
-                    </linearGradient>
-                </defs>
-                <polygon fill="#6E6E6E" fill-rule="evenodd" points="8 5 12.5 10 3.5 10"/>
             </svg>
         </td>
     </tr>
@@ -8156,71 +8208,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>TabFrame.moveToLeftBottom.icon</td>
+        <td>TabFrame.moveToBottomLeft.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
         <td align="center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <defs id="colors">
-                    <linearGradient id="Icons.moveToLeftBottom.color">
+                    <linearGradient id="Icons.moveToBottomLeft.color">
                         <stop offset="0" stop-color="#AFB1B3"/>
                         <stop offset="1" stop-color="#AFB1B3"/>
                     </linearGradient>
                 </defs>
                 <path fill="#6E6E6E" fill-rule="evenodd"
-                      d="M3,10 L3,13 L13,13 L13,3 L3,3 L3,10 L3,13 L6,13 L6,7 L3,7 L3,10 Z M2,2 L14,2 L14,14 L2,14 L2,2 Z"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>TabFrame.moveToLeftBottomDisabled.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.moveToLeftBottomDisabled.color">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#AFB1B3" fill-rule="evenodd"
-                      d="M3,10 L3,13 L13,13 L13,3 L3,3 L3,10 L3,13 L6,13 L6,7 L3,7 L3,10 Z M2,2 L14,2 L14,14 L2,14 L2,2 Z"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>TabFrame.moveToLeftTop.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.moveToLeftTop.color">
-                        <stop offset="0" stop-color="#AFB1B3"/>
-                        <stop offset="1" stop-color="#AFB1B3"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#6E6E6E" fill-rule="evenodd"
-                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M3,3 L6,3 L6,9 L3,9 L3,3 Z"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>TabFrame.moveToBottomRight.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.moveToBottomRight.color">
-                        <stop offset="0" stop-color="#AFB1B3"/>
-                        <stop offset="1" stop-color="#AFB1B3"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#6E6E6E" fill-rule="evenodd"
-                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M9,10 L9,13 L3,13 L3,10 L9,10 Z"
-                      transform="matrix(-1 0 0 1 16 0)"/>
+                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M9,10 L9,13 L3,13 L3,10 L9,10 Z"/>
             </svg>
         </td>
     </tr>
@@ -8238,131 +8238,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 </defs>
                 <path fill="#6E6E6E" fill-rule="evenodd"
                       d="M3,10 L3,13 L13,13 L13,3 L3,3 L3,10 L3,13 L6,13 L6,7 L3,7 L3,10 Z M2,2 L14,2 L14,14 L2,14 L2,2 Z"
-                      transform="matrix(-1 0 0 1 16 0)"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>TabFrame.moveToLeftTopDisabled.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.moveToLeftTopDisabled.color">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#AFB1B3" fill-rule="evenodd"
-                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M3,3 L6,3 L6,9 L3,9 L3,3 Z"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>TabFrame.moveToRightTopDisabled.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.moveToRightTopDisabled.color">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#AFB1B3" fill-rule="evenodd"
-                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M3,3 L6,3 L6,9 L3,9 L3,3 Z"
-                      transform="matrix(-1 0 0 1 16 0)"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>TabFrame.moveToTopRight.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.moveToTopRight.color">
-                        <stop offset="0" stop-color="#AFB1B3"/>
-                        <stop offset="1" stop-color="#AFB1B3"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#6E6E6E" fill-rule="evenodd"
-                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M9,10 L9,13 L3,13 L3,10 L9,10 Z"
-                      transform="rotate(180 8 8)"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>TabFrame.moveToTopLeftDisabled.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.moveToTopLeftDisabled.color">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#AFB1B3" fill-rule="evenodd"
-                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M9,10 L9,13 L3,13 L3,10 L9,10 Z"
-                      transform="matrix(1 0 0 -1 0 16)"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>TabFrame.moveToRightBottomDisabled.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.moveToRightBottomDisabled.color">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#AFB1B3" fill-rule="evenodd"
-                      d="M3,10 L3,13 L13,13 L13,3 L3,3 L3,10 L3,13 L6,13 L6,7 L3,7 L3,10 Z M2,2 L14,2 L14,14 L2,14 L2,2 Z"
-                      transform="matrix(-1 0 0 1 16 0)"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>TabFrame.moveToTopRightDisabled.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.moveToTopRightDisabled.color">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#AFB1B3" fill-rule="evenodd"
-                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M9,10 L9,13 L3,13 L3,10 L9,10 Z"
-                      transform="rotate(180 8 8)"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>TabFrame.moveToRightTop.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.moveToRightTop.color">
-                        <stop offset="0" stop-color="#AFB1B3"/>
-                        <stop offset="1" stop-color="#AFB1B3"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#6E6E6E" fill-rule="evenodd"
-                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M3,3 L6,3 L6,9 L3,9 L3,3 Z"
                       transform="matrix(-1 0 0 1 16 0)"/>
             </svg>
         </td>
@@ -8386,19 +8261,90 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>TabFrame.moveToBottomLeft.icon</td>
+        <td>TabFrame.moveToLeftBottomDisabled.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
         <td align="center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <defs id="colors">
-                    <linearGradient id="Icons.moveToBottomLeft.color">
+                    <linearGradient id="Icons.moveToLeftBottomDisabled.color">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#AFB1B3" fill-rule="evenodd"
+                      d="M3,10 L3,13 L13,13 L13,3 L3,3 L3,10 L3,13 L6,13 L6,7 L3,7 L3,10 Z M2,2 L14,2 L14,14 L2,14 L2,2 Z"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>TabFrame.moveToBottomRightDisabled.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.moveToBottomRightDisabled.color">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#AFB1B3" fill-rule="evenodd"
+                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M9,10 L9,13 L3,13 L3,10 L9,10 Z"
+                      transform="matrix(-1 0 0 1 16 0)"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>TabFrame.moveToRightTopDisabled.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.moveToRightTopDisabled.color">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#AFB1B3" fill-rule="evenodd"
+                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M3,3 L6,3 L6,9 L3,9 L3,3 Z"
+                      transform="matrix(-1 0 0 1 16 0)"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>TabFrame.moveToLeftTop.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.moveToLeftTop.color">
                         <stop offset="0" stop-color="#AFB1B3"/>
                         <stop offset="1" stop-color="#AFB1B3"/>
                     </linearGradient>
                 </defs>
                 <path fill="#6E6E6E" fill-rule="evenodd"
-                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M9,10 L9,13 L3,13 L3,10 L9,10 Z"/>
+                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M3,3 L6,3 L6,9 L3,9 L3,3 Z"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>TabFrame.moveToTopRight.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.moveToTopRight.color">
+                        <stop offset="0" stop-color="#AFB1B3"/>
+                        <stop offset="1" stop-color="#AFB1B3"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#6E6E6E" fill-rule="evenodd"
+                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M9,10 L9,13 L3,13 L3,10 L9,10 Z"
+                      transform="rotate(180 8 8)"/>
             </svg>
         </td>
     </tr>
@@ -8420,19 +8366,125 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>TabFrame.moveToBottomRightDisabled.icon</td>
+        <td>TabFrame.moveToRightBottomDisabled.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
         <td align="center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <defs id="colors">
-                    <linearGradient id="Icons.moveToBottomRightDisabled.color">
+                    <linearGradient id="Icons.moveToRightBottomDisabled.color">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#AFB1B3" fill-rule="evenodd"
+                      d="M3,10 L3,13 L13,13 L13,3 L3,3 L3,10 L3,13 L6,13 L6,7 L3,7 L3,10 Z M2,2 L14,2 L14,14 L2,14 L2,2 Z"
+                      transform="matrix(-1 0 0 1 16 0)"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>TabFrame.moveToBottomRight.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.moveToBottomRight.color">
+                        <stop offset="0" stop-color="#AFB1B3"/>
+                        <stop offset="1" stop-color="#AFB1B3"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#6E6E6E" fill-rule="evenodd"
+                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M9,10 L9,13 L3,13 L3,10 L9,10 Z"
+                      transform="matrix(-1 0 0 1 16 0)"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>TabFrame.moveToTopLeftDisabled.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.moveToTopLeftDisabled.color">
                         <stop offset="0" stop-color="#6E6E6E"/>
                         <stop offset="1" stop-color="#6E6E6E"/>
                     </linearGradient>
                 </defs>
                 <path fill="#AFB1B3" fill-rule="evenodd"
                       d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M9,10 L9,13 L3,13 L3,10 L9,10 Z"
+                      transform="matrix(1 0 0 -1 0 16)"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>TabFrame.moveToTopRightDisabled.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.moveToTopRightDisabled.color">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#AFB1B3" fill-rule="evenodd"
+                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M9,10 L9,13 L3,13 L3,10 L9,10 Z"
+                      transform="rotate(180 8 8)"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>TabFrame.moveToLeftBottom.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.moveToLeftBottom.color">
+                        <stop offset="0" stop-color="#AFB1B3"/>
+                        <stop offset="1" stop-color="#AFB1B3"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#6E6E6E" fill-rule="evenodd"
+                      d="M3,10 L3,13 L13,13 L13,3 L3,3 L3,10 L3,13 L6,13 L6,7 L3,7 L3,10 Z M2,2 L14,2 L14,14 L2,14 L2,2 Z"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>TabFrame.moveToLeftTopDisabled.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.moveToLeftTopDisabled.color">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#AFB1B3" fill-rule="evenodd"
+                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M3,3 L6,3 L6,9 L3,9 L3,3 Z"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>TabFrame.moveToRightTop.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.moveToRightTop.color">
+                        <stop offset="0" stop-color="#AFB1B3"/>
+                        <stop offset="1" stop-color="#AFB1B3"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#6E6E6E" fill-rule="evenodd"
+                      d="M2,2 L14,2 L14,14 L2,14 L2,2 Z M3,3 L3,13 L13,13 L13,3 L3,3 Z M3,3 L6,3 L6,9 L3,9 L3,3 Z"
                       transform="matrix(-1 0 0 1 16 0)"/>
             </svg>
         </td>
@@ -8506,25 +8558,25 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #F2F2F2" width="150" height="25">
     </tr>
     <tr>
-        <td>TabFramePopup.headerHoverBackground</td>
-        <td>#DADADA [218,218,218]</td>
-        <td>%backgroundHover</td>
-        <td style="background-color: #DADADA" width="150" height="25">
-    </tr>
-    <tr>
         <td>TabFramePopup.headerSelectedHoverBackground</td>
         <td>#DADADA [218,218,218]</td>
         <td>%backgroundHover</td>
         <td style="background-color: #DADADA" width="150" height="25">
     </tr>
     <tr>
-        <td>TabFramePopup.headerFocusHoverBackground</td>
+        <td>TabFramePopup.headerHoverBackground</td>
+        <td>#DADADA [218,218,218]</td>
+        <td>%backgroundHover</td>
+        <td style="background-color: #DADADA" width="150" height="25">
+    </tr>
+    <tr>
+        <td>TabFramePopup.headerFocusSelectedHoverBackground</td>
         <td>#CCCFD5 [204,207,213]</td>
         <td>%backgroundHoverColorful</td>
         <td style="background-color: #CCCFD5" width="150" height="25">
     </tr>
     <tr>
-        <td>TabFramePopup.headerFocusSelectedHoverBackground</td>
+        <td>TabFramePopup.headerFocusHoverBackground</td>
         <td>#CCCFD5 [204,207,213]</td>
         <td>%backgroundHoverColorful</td>
         <td style="background-color: #CCCFD5" width="150" height="25">
@@ -8622,13 +8674,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #BDBDBD" width="150" height="25">
     </tr>
     <tr>
-        <td>TabFrameTab.foreground</td>
+        <td>TabFrameTab.hoverForeground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>TabFrameTab.hoverForeground</td>
+        <td>TabFrameTab.foreground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -8842,25 +8894,25 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #DADADA" width="150" height="25">
     </tr>
     <tr>
-        <td>TabbedPane.focus</td>
-        <td>#FFFFFF [255,255,255]</td>
-        <td>%backgroundSelected</td>
-        <td style="background-color: #FFFFFF" width="150" height="25">
-    </tr>
-    <tr>
         <td>TabbedPane.selectedBackground</td>
         <td>#FFFFFF [255,255,255]</td>
         <td>%backgroundSelected</td>
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>TabbedPane.tabBorderColor</td>
+        <td>TabbedPane.focus</td>
+        <td>#FFFFFF [255,255,255]</td>
+        <td>%backgroundSelected</td>
+        <td style="background-color: #FFFFFF" width="150" height="25">
+    </tr>
+    <tr>
+        <td>TabbedPane.borderColor</td>
         <td>#D1D1D1 [209,209,209]</td>
         <td>%border</td>
         <td style="background-color: #D1D1D1" width="150" height="25">
     </tr>
     <tr>
-        <td>TabbedPane.borderColor</td>
+        <td>TabbedPane.tabBorderColor</td>
         <td>#D1D1D1 [209,209,209]</td>
         <td>%border</td>
         <td style="background-color: #D1D1D1" width="150" height="25">
@@ -8938,24 +8990,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>TabbedPane.tabCloseHoverIcon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.closeHovered.color" opacity="Icons.closeHovered.opacity">
-                        <stop offset="0" stop-color="#AFB1B3" stop-opacity=".8"/>
-                        <stop offset="1" stop-color="#AFB1B3" stop-opacity=".8"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#AFB1B3"
-                      d="M7.99494337,8.70506958 L4.85408745,11.8540874 L4.14698067,11.1469807 L7.29493214,8.00505835 L4.14698067,4.85710688 L4.85408745,4.1500001 L8.00204181,7.29795446 L11.1439612,4.1500001 L11.851068,4.85710688 L8.70204624,7.99795888 L11.851068,11.1469807 L11.1439612,11.8540874 L7.99494337,8.70506958 Z"/>
-            </svg>
-            
-        </td>
-    </tr>
-    <tr>
         <td>TabbedPane.newTab.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
@@ -8972,6 +9006,24 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                     <rect width="2" height="10" x="7" y="3" fill="#6E6E6E" transform="rotate(90 8 8)"/>
                 </g>
             </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>TabbedPane.tabCloseHoverIcon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.closeHovered.color" opacity="Icons.closeHovered.opacity">
+                        <stop offset="0" stop-color="#AFB1B3" stop-opacity=".8"/>
+                        <stop offset="1" stop-color="#AFB1B3" stop-opacity=".8"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#AFB1B3"
+                      d="M7.99494337,8.70506958 L4.85408745,11.8540874 L4.14698067,11.1469807 L7.29493214,8.00505835 L4.14698067,4.85710688 L4.85408745,4.1500001 L8.00204181,7.29795446 L11.1439612,4.1500001 L11.851068,4.85710688 L8.70204624,7.99795888 L11.851068,11.1469807 L11.1439612,11.8540874 L7.99494337,8.70506958 Z"/>
+            </svg>
+            
         </td>
     </tr>
     <tr>
@@ -9050,18 +9102,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>Table.focusCellHighlightBorder</td>
-        <td>DarkTableCellFocusBorder</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Table.cellEditorBorder</td>
-        <td>DarkTableCellBorder</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
         <td>Table.focusSelectedCellHighlightBorder</td>
         <td>DarkTableCellFocusBorder</td>
         <td></td>
@@ -9074,13 +9114,25 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
+        <td>Table.focusCellHighlightBorder</td>
+        <td>DarkTableCellFocusBorder</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Table.cellNoFocusBorder</td>
+        <td>DarkTableCellBorder</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>Table.scrollPaneBorder</td>
         <td>DarkTableScrollPaneBorder</td>
         <td></td>
         <td style="padding:0px" align="center"><img src="img/DarkTableScrollPaneBorder.png" alt="Table.scrollPaneBorder"></td>
     </tr>
     <tr>
-        <td>Table.cellNoFocusBorder</td>
+        <td>Table.cellEditorBorder</td>
         <td>DarkTableCellBorder</td>
         <td></td>
         <td></td>
@@ -9337,10 +9389,10 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>TableHeader.border</td>
-        <td>DarkTableHeaderBorder</td>
+        <td>TableHeader.focusCellBorder</td>
+        <td>DarkTableCellBorder</td>
         <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkTableHeaderBorder.png" alt="TableHeader.border"></td>
+        <td></td>
     </tr>
     <tr>
         <td>TableHeader.cellBorder</td>
@@ -9349,10 +9401,10 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>TableHeader.focusCellBorder</td>
-        <td>DarkTableCellBorder</td>
+        <td>TableHeader.border</td>
+        <td>DarkTableHeaderBorder</td>
         <td></td>
-        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkTableHeaderBorder.png" alt="TableHeader.border"></td>
     </tr>
     <tr>
         <td>TableHeader.background</td>
@@ -9407,6 +9459,18 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #D1D1D1" width="150" height="25">
     </tr>
     <tr>
+        <td>TaskPane.titleForeground</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%textForeground</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
+        <td>TaskPane.titleOver</td>
+        <td>#000000 [000,000,000]</td>
+        <td>%textForeground</td>
+        <td style="background-color: #000000" width="150" height="25">
+    </tr>
+    <tr>
         <td>TaskPane.specialTitleForeground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
@@ -9419,25 +9483,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>TaskPane.titleOver</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%textForeground</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>TaskPane.titleForeground</td>
+        <td>TaskPane.foreground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
         <td>TaskPane.specialTitleBackground</td>
-        <td>#000000 [000,000,000]</td>
-        <td>%textForeground</td>
-        <td style="background-color: #000000" width="150" height="25">
-    </tr>
-    <tr>
-        <td>TaskPane.foreground</td>
         <td>#000000 [000,000,000]</td>
         <td>%textForeground</td>
         <td style="background-color: #000000" width="150" height="25">
@@ -9693,23 +9745,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>TextComponent.cutDisabled.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.cutDisabled.color">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#AFB1B3"
-                      d="M6.53206047,5.10906 C6.68535547,4.77581 6.77200047,4.40923501 6.77200047,4.01600001 C6.77200047,2.54303502 5.57896548,1.35000002 4.10600049,1.35000002 C2.63303549,1.35000002 1.4400005,2.54303502 1.4400005,4.01600001 C1.4400005,5.488965 2.63303549,6.68199999 4.10600049,6.68199999 C4.49923548,6.68199999 4.86581048,6.59535499 5.19906048,6.44205999 L6.77200047,8.01499999 L5.19906048,9.58793998 C4.86581048,9.43464498 4.49923548,9.34799998 4.10600049,9.34799998 C2.63303549,9.34799998 1.4400005,10.541035 1.4400005,12.014 C1.4400005,13.486965 2.63303549,14.6799999 4.10600049,14.6799999 C5.57896548,14.6799999 6.77200047,13.486965 6.77200047,12.014 C6.77200047,11.620765 6.68535547,11.25419 6.53206047,10.92094 L8.10500046,9.34799998 L12.7705004,14 L14.7700004,14 L14.7700004,13.347 L6.53206047,5.10906 Z M4.1053342,5.33702364 C3.37236745,5.33702364 2.77266738,4.74383861 2.77266738,4.00402356 C2.77266738,3.26420851 3.37236745,2.67102348 4.1053342,2.67102348 C4.83830096,2.67102348 5.43800103,3.26420851 5.43800103,4.00402356 C5.43800103,4.74383861 4.83830096,5.33702364 4.1053342,5.33702364 Z M4.1053342,13.3350241 C3.37236745,13.3350241 2.77266738,12.7418391 2.77266738,12.0020241 C2.77266738,11.262209 3.37236745,10.669024 4.1053342,10.669024 C4.83830096,10.669024 5.43800103,11.262209 5.43800103,12.0020241 C5.43800103,12.7418391 4.83830096,13.3350241 4.1053342,13.3350241 Z M8.10333468,8.33627383 C7.91676132,8.33627383 7.77016797,8.18964382 7.77016797,8.00302381 C7.77016797,7.8164038 7.91676132,7.66977379 8.10333468,7.66977379 C8.28990803,7.66977379 8.43650138,7.8164038 8.43650138,8.00302381 C8.43650138,8.18964382 8.28990803,8.33627383 8.10333468,8.33627383 Z M12.7710002,2.00452344 L8.77299971,6.00352368 L10.1056665,7.33652377 L14.7700004,2.67102348 L14.7700004,2.00452344 L12.7710002,2.00452344 Z"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
         <td>TextComponent.copy.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
@@ -9744,6 +9779,23 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 <path fill="#6E6E6E" fill-rule="evenodd"
                       d="M3,1 L3,0 L7,0 L7,1 L10,1 L10,13 L0,13 L0,1 L3,1 Z M4,1 L4,2 L6,2 L6,1 L4,1 Z M2,4 L2,11 L8,11 L8,4 L2,4 Z"
                       transform="translate(3 1)"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>TextComponent.cutDisabled.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.cutDisabled.color">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
+                    </linearGradient>
+                </defs>
+                <path fill="#AFB1B3"
+                      d="M6.53206047,5.10906 C6.68535547,4.77581 6.77200047,4.40923501 6.77200047,4.01600001 C6.77200047,2.54303502 5.57896548,1.35000002 4.10600049,1.35000002 C2.63303549,1.35000002 1.4400005,2.54303502 1.4400005,4.01600001 C1.4400005,5.488965 2.63303549,6.68199999 4.10600049,6.68199999 C4.49923548,6.68199999 4.86581048,6.59535499 5.19906048,6.44205999 L6.77200047,8.01499999 L5.19906048,9.58793998 C4.86581048,9.43464498 4.49923548,9.34799998 4.10600049,9.34799998 C2.63303549,9.34799998 1.4400005,10.541035 1.4400005,12.014 C1.4400005,13.486965 2.63303549,14.6799999 4.10600049,14.6799999 C5.57896548,14.6799999 6.77200047,13.486965 6.77200047,12.014 C6.77200047,11.620765 6.68535547,11.25419 6.53206047,10.92094 L8.10500046,9.34799998 L12.7705004,14 L14.7700004,14 L14.7700004,13.347 L6.53206047,5.10906 Z M4.1053342,5.33702364 C3.37236745,5.33702364 2.77266738,4.74383861 2.77266738,4.00402356 C2.77266738,3.26420851 3.37236745,2.67102348 4.1053342,2.67102348 C4.83830096,2.67102348 5.43800103,3.26420851 5.43800103,4.00402356 C5.43800103,4.74383861 4.83830096,5.33702364 4.1053342,5.33702364 Z M4.1053342,13.3350241 C3.37236745,13.3350241 2.77266738,12.7418391 2.77266738,12.0020241 C2.77266738,11.262209 3.37236745,10.669024 4.1053342,10.669024 C4.83830096,10.669024 5.43800103,11.262209 5.43800103,12.0020241 C5.43800103,12.7418391 4.83830096,13.3350241 4.1053342,13.3350241 Z M8.10333468,8.33627383 C7.91676132,8.33627383 7.77016797,8.18964382 7.77016797,8.00302381 C7.77016797,7.8164038 7.91676132,7.66977379 8.10333468,7.66977379 C8.28990803,7.66977379 8.43650138,7.8164038 8.43650138,8.00302381 C8.43650138,8.18964382 8.28990803,8.33627383 8.10333468,8.33627383 Z M12.7710002,2.00452344 L8.77299971,6.00352368 L10.1056665,7.33652377 L14.7700004,2.67102348 L14.7700004,2.00452344 L12.7710002,2.00452344 Z"/>
             </svg>
         </td>
     </tr>
@@ -9824,13 +9876,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>TextField.searchFocusArc</td>
+        <td>TextField.focusArc</td>
         <td>5</td>
         <td>%arcFocus</td>
         <td></td>
     </tr>
     <tr>
-        <td>TextField.focusArc</td>
+        <td>TextField.searchFocusArc</td>
         <td>5</td>
         <td>%arcFocus</td>
         <td></td>
@@ -9872,13 +9924,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #7B9FC7" width="150" height="25">
     </tr>
     <tr>
-        <td>TextField.border.warning</td>
+        <td>TextField.border.focusWarning</td>
         <td>#FFD385 [255,211,133]</td>
         <td>%glowWarningLine</td>
         <td style="background-color: #FFD385" width="150" height="25">
     </tr>
     <tr>
-        <td>TextField.border.focusWarning</td>
+        <td>TextField.border.warning</td>
         <td>#FFD385 [255,211,133]</td>
         <td>%glowWarningLine</td>
         <td style="background-color: #FFD385" width="150" height="25">
@@ -9890,13 +9942,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>TextField.inactiveBackground</td>
+        <td>TextField.disabledBackground</td>
         <td>#F2F2F2 [242,242,242]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #F2F2F2" width="150" height="25">
     </tr>
     <tr>
-        <td>TextField.disabledBackground</td>
+        <td>TextField.inactiveBackground</td>
         <td>#F2F2F2 [242,242,242]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #F2F2F2" width="150" height="25">
@@ -9938,26 +9990,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #CFCFCF" width="150" height="25">
     </tr>
     <tr>
-        <td>TextField.search.searchWithHistory.disabled.icon</td>
+        <td>TextField.search.search.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
         <td align="center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <defs id="colors">
-                    <linearGradient id="Icons.searchWithHistory.disabled.color">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
-                    </linearGradient>
-                    <linearGradient id="Icons.searchWithHistory.disabled.arrowColor">
-                        <stop offset="0" stop-color="#6E6E6E"/>
-                        <stop offset="1" stop-color="#6E6E6E"/>
+                    <linearGradient id="Icons.search.color">
+                        <stop offset="0" stop-color="#7F8B91"/>
+                        <stop offset="1" stop-color="#7F8B91"/>
                     </linearGradient>
                 </defs>
-                <g fill="none" opacity=".8">
-                    <path fill="#AFB1B3"
-                          d="M9.03813598,9.94904865 L11.9980971,12.9090097 L10.9374369,13.9696699 L7.98176525,11.0139983 C7.14925083,11.6334368 6.11743313,12 5,12 C2.23857625,12 -1.77635684e-15,9.76142375 -1.77635684e-15,7 C-1.77635684e-15,4.23857625 2.23857625,2 5,2 C7.76142375,2 10,4.23857625 10,7 C10,8.1028408 9.64294803,9.12228765 9.03813598,9.94904865 Z M5,11 C7.209139,11 9,9.209139 9,7 C9,4.790861 7.209139,3 5,3 C2.790861,3 1,4.790861 1,7 C1,9.209139 2.790861,11 5,11 Z"/>
-                    <polygon fill="#AFB1B3" points="16 7 13.5 10 11 7"/>
-                </g>
+                <path fill="#6E6E6E" opacity=".8"
+                      d="M11.038136,9.94904865 L13.9980971,12.9090097 L12.9374369,13.9696699 L9.98176525,11.0139983 C9.14925083,11.6334368 8.11743313,12 7,12 C4.23857625,12 2,9.76142375 2,7 C2,4.23857625 4.23857625,2 7,2 C9.76142375,2 12,4.23857625 12,7 C12,8.1028408 11.642948,9.12228765 11.038136,9.94904865 Z M7,11 C9.209139,11 11,9.209139 11,7 C11,4.790861 9.209139,3 7,3 C4.790861,3 3,4.790861 3,7 C3,9.209139 4.790861,11 7,11 Z"/>
             </svg>
         </td>
     </tr>
@@ -9976,24 +10021,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 <path fill="#AFB1B3" opacity=".8"
                       d="M11.038136,9.94904865 L13.9980971,12.9090097 L12.9374369,13.9696699 L9.98176525,11.0139983 C9.14925083,11.6334368 8.11743313,12 7,12 C4.23857625,12 2,9.76142375 2,7 C2,4.23857625 4.23857625,2 7,2 C9.76142375,2 12,4.23857625 12,7 C12,8.1028408 11.642948,9.12228765 11.038136,9.94904865 Z M7,11 C9.209139,11 11,9.209139 11,7 C11,4.790861 9.209139,3 7,3 C4.790861,3 3,4.790861 3,7 C3,9.209139 4.790861,11 7,11 Z"/>
             </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>TextField.search.clearHover.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.closeHovered.color" opacity="Icons.closeHovered.opacity">
-                        <stop offset="0" stop-color="#AFB1B3" stop-opacity=".8"/>
-                        <stop offset="1" stop-color="#AFB1B3" stop-opacity=".8"/>
-                    </linearGradient>
-                </defs>
-                <path fill="#AFB1B3"
-                      d="M7.99494337,8.70506958 L4.85408745,11.8540874 L4.14698067,11.1469807 L7.29493214,8.00505835 L4.14698067,4.85710688 L4.85408745,4.1500001 L8.00204181,7.29795446 L11.1439612,4.1500001 L11.851068,4.85710688 L8.70204624,7.99795888 L11.851068,11.1469807 L11.1439612,11.8540874 L7.99494337,8.70506958 Z"/>
-            </svg>
-            
         </td>
     </tr>
     <tr>
@@ -10021,19 +10048,44 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>TextField.search.search.icon</td>
+        <td>TextField.search.clearHover.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
         <td align="center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <defs id="colors">
-                    <linearGradient id="Icons.search.color">
-                        <stop offset="0" stop-color="#7F8B91"/>
-                        <stop offset="1" stop-color="#7F8B91"/>
+                    <linearGradient id="Icons.closeHovered.color" opacity="Icons.closeHovered.opacity">
+                        <stop offset="0" stop-color="#AFB1B3" stop-opacity=".8"/>
+                        <stop offset="1" stop-color="#AFB1B3" stop-opacity=".8"/>
                     </linearGradient>
                 </defs>
-                <path fill="#6E6E6E" opacity=".8"
-                      d="M11.038136,9.94904865 L13.9980971,12.9090097 L12.9374369,13.9696699 L9.98176525,11.0139983 C9.14925083,11.6334368 8.11743313,12 7,12 C4.23857625,12 2,9.76142375 2,7 C2,4.23857625 4.23857625,2 7,2 C9.76142375,2 12,4.23857625 12,7 C12,8.1028408 11.642948,9.12228765 11.038136,9.94904865 Z M7,11 C9.209139,11 11,9.209139 11,7 C11,4.790861 9.209139,3 7,3 C4.790861,3 3,4.790861 3,7 C3,9.209139 4.790861,11 7,11 Z"/>
+                <path fill="#AFB1B3"
+                      d="M7.99494337,8.70506958 L4.85408745,11.8540874 L4.14698067,11.1469807 L7.29493214,8.00505835 L4.14698067,4.85710688 L4.85408745,4.1500001 L8.00204181,7.29795446 L11.1439612,4.1500001 L11.851068,4.85710688 L8.70204624,7.99795888 L11.851068,11.1469807 L11.1439612,11.8540874 L7.99494337,8.70506958 Z"/>
+            </svg>
+            
+        </td>
+    </tr>
+    <tr>
+        <td>TextField.search.searchWithHistory.disabled.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.searchWithHistory.disabled.color">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
+                    </linearGradient>
+                    <linearGradient id="Icons.searchWithHistory.disabled.arrowColor">
+                        <stop offset="0" stop-color="#6E6E6E"/>
+                        <stop offset="1" stop-color="#6E6E6E"/>
+                    </linearGradient>
+                </defs>
+                <g fill="none" opacity=".8">
+                    <path fill="#AFB1B3"
+                          d="M9.03813598,9.94904865 L11.9980971,12.9090097 L10.9374369,13.9696699 L7.98176525,11.0139983 C7.14925083,11.6334368 6.11743313,12 5,12 C2.23857625,12 -1.77635684e-15,9.76142375 -1.77635684e-15,7 C-1.77635684e-15,4.23857625 2.23857625,2 5,2 C7.76142375,2 10,4.23857625 10,7 C10,8.1028408 9.64294803,9.12228765 9.03813598,9.94904865 Z M5,11 C7.209139,11 9,9.209139 9,7 C9,4.790861 7.209139,3 5,3 C2.790861,3 1,4.790861 1,7 C1,9.209139 2.790861,11 5,11 Z"/>
+                    <polygon fill="#AFB1B3" points="16 7 13.5 10 11 7"/>
+                </g>
             </svg>
         </td>
     </tr>
@@ -10119,13 +10171,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>TextPane.disabledBackground</td>
+        <td>TextPane.inactiveBackground</td>
         <td>#F2F2F2 [242,242,242]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #F2F2F2" width="150" height="25">
     </tr>
     <tr>
-        <td>TextPane.inactiveBackground</td>
+        <td>TextPane.disabledBackground</td>
         <td>#F2F2F2 [242,242,242]</td>
         <td>%textBackgroundInactive</td>
         <td style="background-color: #F2F2F2" width="150" height="25">
@@ -10315,13 +10367,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #FFFFFF" width="150" height="25">
     </tr>
     <tr>
-        <td>ToggleButton.disabledSliderKnobFillColor</td>
+        <td>ToggleButton.disabledSliderKnobBorderColor</td>
         <td>#ABABAB [171,171,171]</td>
         <td>%controlFillDisabled</td>
         <td style="background-color: #ABABAB" width="150" height="25">
     </tr>
     <tr>
-        <td>ToggleButton.disabledSliderKnobBorderColor</td>
+        <td>ToggleButton.disabledSliderKnobFillColor</td>
         <td>#ABABAB [171,171,171]</td>
         <td>%controlFillDisabled</td>
         <td style="background-color: #ABABAB" width="150" height="25">
@@ -10421,12 +10473,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td></td>
     </tr>
     <tr>
-        <td>ToolBar.nonrolloverBorder</td>
-        <td>DarkToolBarBorder</td>
-        <td></td>
-        <td style="padding:0px" align="center"><img src="img/DarkToolBarBorder.png" alt="ToolBar.nonrolloverBorder"></td>
-    </tr>
-    <tr>
         <td>ToolBar.border</td>
         <td>DarkToolBarBorder</td>
         <td></td>
@@ -10439,13 +10485,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="padding:0px" align="center"><img src="img/DarkToolBarBorder.png" alt="ToolBar.rolloverBorder"></td>
     </tr>
     <tr>
-        <td>ToolBar.background</td>
+        <td>ToolBar.nonrolloverBorder</td>
+        <td>DarkToolBarBorder</td>
+        <td></td>
+        <td style="padding:0px" align="center"><img src="img/DarkToolBarBorder.png" alt="ToolBar.nonrolloverBorder"></td>
+    </tr>
+    <tr>
+        <td>ToolBar.floatingBackground</td>
         <td>#F2F2F2 [242,242,242]</td>
         <td>%background</td>
         <td style="background-color: #F2F2F2" width="150" height="25">
     </tr>
     <tr>
-        <td>ToolBar.floatingBackground</td>
+        <td>ToolBar.background</td>
         <td>#F2F2F2 [242,242,242]</td>
         <td>%background</td>
         <td style="background-color: #F2F2F2" width="150" height="25">
@@ -10579,6 +10631,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="padding:0px" align="center"><img src="img/Font[family=Dialog,name=Dialog,style=plain,size=12].png" alt="ToolTip.font"></td>
     </tr>
     <tr>
+        <td>ToolTip.plainInsets</td>
+        <td>Insets [2,5,2,5]</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>ToolTip.borderInsets</td>
         <td>Insets [5,10,5,10]</td>
         <td></td>
@@ -10641,6 +10699,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     <tr>
         <td>ToolTip.borderInactive</td>
         <td>com.github.weisj.darklaf.ui.tooltip.DarkDefaultToolTipBorder</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ToolTip.defaultStyle</td>
+        <td>plainBalloon</td>
         <td></td>
         <td></td>
     </tr>
@@ -11008,7 +11072,24 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>Tree.collapsed.unselected.focused.icon</td>
+        <td>Tree.collapsed.selected.focused.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.arrowRightSelected.color">
+                        <stop offset="0" stop-color="#AFB1B3"/>
+                        <stop offset="1" stop-color="#AFB1B3"/>
+                    </linearGradient>
+                </defs>
+                <polygon fill="#FFFFFF" fill-rule="evenodd" points="8.5 5.5 13 10.5 4 10.5"
+                         transform="matrix(0 -1 -1 0 16.5 16.5)"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>Tree.collapsedIcon</td>
         <td>Icon [16,16]</td>
         <td></td>
         <td align="center">
@@ -11025,7 +11106,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>Tree.collapsed.selected.unfocused.icon</td>
+        <td>Tree.collapsed.unselected.focused.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
         <td align="center">
@@ -11059,7 +11140,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>Tree.collapsedIcon</td>
+        <td>Tree.collapsed.selected.unfocused.icon</td>
         <td>Icon [16,16]</td>
         <td></td>
         <td align="center">
@@ -11072,6 +11153,23 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 </defs>
                 <polygon fill="#6E6E6E" fill-rule="evenodd" points="8.5 5.5 13 10.5 4 10.5"
                          transform="matrix(0 -1 -1 0 16.5 16.5)"/>
+            </svg>
+        </td>
+    </tr>
+    <tr>
+        <td>Tree.expanded.selected.focused.icon</td>
+        <td>Icon [16,16]</td>
+        <td></td>
+        <td align="center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <defs id="colors">
+                    <linearGradient id="Icons.arrowDownSelected.color">
+                        <stop offset="0" stop-color="#AFB1B3"/>
+                        <stop offset="1" stop-color="#AFB1B3"/>
+                    </linearGradient>
+                </defs>
+                <polygon fill="#FFFFFF" fill-rule="evenodd" points="8 6 12.5 11 3.5 11"
+                         transform="matrix(1 0 0 -1 0 17)"/>
             </svg>
         </td>
     </tr>
@@ -11144,23 +11242,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </td>
     </tr>
     <tr>
-        <td>Tree.collapsed.selected.focused.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.arrowRightSelected.color">
-                        <stop offset="0" stop-color="#AFB1B3"/>
-                        <stop offset="1" stop-color="#AFB1B3"/>
-                    </linearGradient>
-                </defs>
-                <polygon fill="#FFFFFF" fill-rule="evenodd" points="8.5 5.5 13 10.5 4 10.5"
-                         transform="matrix(0 -1 -1 0 16.5 16.5)"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
         <td>Tree.openIcon</td>
         <td>Icon [16,16]</td>
         <td></td>
@@ -11191,23 +11272,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 </defs>
                 <path fill="#9AA7B0"
                       d="M1,13 L15,13 L15,4 L7.98457,4 L6.69633,2.71149 C6.22161957,2.28559443 5.61570121,2.03457993 4.97888,2 L1.05128,2 C1.02295884,2 1,2.02295884 1,2.05128 L1,13 Z"/>
-            </svg>
-        </td>
-    </tr>
-    <tr>
-        <td>Tree.expanded.selected.focused.icon</td>
-        <td>Icon [16,16]</td>
-        <td></td>
-        <td align="center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <defs id="colors">
-                    <linearGradient id="Icons.arrowDownSelected.color">
-                        <stop offset="0" stop-color="#AFB1B3"/>
-                        <stop offset="1" stop-color="#AFB1B3"/>
-                    </linearGradient>
-                </defs>
-                <polygon fill="#FFFFFF" fill-rule="evenodd" points="8 6 12.5 11 3.5 11"
-                         transform="matrix(1 0 0 -1 0 17)"/>
             </svg>
         </td>
     </tr>
@@ -11316,13 +11380,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <th>Preview</th>
     </tr>
     <tr>
-        <td>global.inactiveBackground</td>
+        <td>global.background</td>
         <td>#F2F2F2 [242,242,242]</td>
         <td>%background</td>
         <td style="background-color: #F2F2F2" width="150" height="25">
     </tr>
     <tr>
-        <td>global.background</td>
+        <td>global.inactiveBackground</td>
         <td>#F2F2F2 [242,242,242]</td>
         <td>%background</td>
         <td style="background-color: #F2F2F2" width="150" height="25">
@@ -11364,13 +11428,19 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <td style="background-color: #000000" width="150" height="25">
     </tr>
     <tr>
-        <td>global.inactiveForeground</td>
+        <td>global.foregroundInactive</td>
         <td>#777777 [119,119,119]</td>
         <td>%textForegroundInactive</td>
         <td style="background-color: #777777" width="150" height="25">
     </tr>
     <tr>
         <td>global.selectionInactiveForeground</td>
+        <td>#777777 [119,119,119]</td>
+        <td>%textForegroundInactive</td>
+        <td style="background-color: #777777" width="150" height="25">
+    </tr>
+    <tr>
+        <td>global.inactiveForeground</td>
         <td>#777777 [119,119,119]</td>
         <td>%textForegroundInactive</td>
         <td style="background-color: #777777" width="150" height="25">
@@ -11383,12 +11453,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </tr>
     <tr>
         <td>global.disabledForeground</td>
-        <td>#777777 [119,119,119]</td>
-        <td>%textForegroundInactive</td>
-        <td style="background-color: #777777" width="150" height="25">
-    </tr>
-    <tr>
-        <td>global.foregroundInactive</td>
         <td>#777777 [119,119,119]</td>
         <td>%textForegroundInactive</td>
         <td style="background-color: #777777" width="150" height="25">
